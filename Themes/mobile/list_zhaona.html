@@ -1,0 +1,127 @@
+<!--#include file="heading.html"-->
+ <!-- <style>
+    .get {
+      background: #1E5B94;
+      color: #fff;
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    .get-title {
+      font-size: 200%;
+      border: 2px solid #fff;
+      padding: 20px;
+      display: inline-block;
+    }
+
+    .get-btn {
+      background: #fff;
+    }
+
+    .detail {
+      background: #fff;
+    }
+
+    .detail-h2 {
+      text-align: center;
+      font-size: 150%;
+      margin: 40px 0;
+    }
+
+  
+    .detail-p {
+      color: #7f8c8d;
+    }
+
+    .detail-mb {
+      margin-bottom: 30px;
+    }
+
+    .hope {
+      background: #0bb59b;
+      padding: 50px 0;
+    }
+
+    .hope-img {
+      text-align: center;
+    }
+
+    .hope-hr {
+      border-color: #149C88;
+    }
+
+    .hope-title {
+      font-size: 140%;
+    }
+
+    .about {
+      background: #fff;
+      padding: 40px 0;
+      color: #7f8c8d;
+    }
+
+    .about-color {
+      color: #34495e;
+    }
+
+    .about-title {
+      font-size: 180%;
+      padding: 30px 0 50px 0;
+      text-align: center;
+    }
+
+    .footer p {
+      color: #7f8c8d;
+      margin: 0;
+      padding: 15px 0;
+      text-align: center;
+      background: #2d3e50;
+    }
+	.detail-h3 {
+    color: black;
+}
+.footer p {
+    color: white;
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+    background: black;
+}
+.am-table{
+    margin-top: 80px;
+   
+    margin-bottom: 250px;
+}
+  </style>-->
+<!--#include file="head.html"-->
+
+
+   <div class="am-slider am-slider-default" data-am-flexslider="{playAfterPaused: 8000}">
+    <ul class="am-slides">
+      <li> <img src="images/zz2.jpg"/></li>
+      
+    </ul>
+  </div>
+  
+ 
+
+ <table class="am-table am-table-striped am-table-hover">
+    <tr>
+                            <th>招聘职位</th>
+                            <th>工作地点</th>
+                            <th>招聘人数</th>
+                            <th>发布时间</th>
+                        </tr>
+                        
+                          <!--foreach{$pageList as $vo}--> 
+                        <tr>
+                            <td class="tbl_buz"><a href="{$vo.aurl}">{$vo.zhiwei}</a></td>
+                            <td class="tbl_buz">{$vo.gongzuodidian}</td>
+                            <td class="tbl_buz">{$vo.jy}</td>
+                            <td class="tbl_tim">{date('Y-m-d',$vo['time'])}</td>
+                        </tr>
+                      	<!--{/foreach}-->
+                        
+</table>
+
+<!--#include file="foot.html"-->

@@ -1,0 +1,95 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>上海震亚律师事务所</title>
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="icon" type="image/png" href="img/header.png">
+
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="上海震亚律师事务所"/>
+
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+
+    <meta name="msapplication-TileColor" content="#0e90d2">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+    <!--<link rel="stylesheet" href="assets/css/style.css">-->
+    <!--<link rel="stylesheet" href="assets/css/base.css">-->
+    <link rel="stylesheet" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/css/app1.css">
+
+
+
+</head>
+
+<body onload="createCode()">
+
+<header class="am-topbar am-topbar-fixed-top">
+    <div class="am-container">
+
+        <a class="am-topbar-brand" href="/">
+            欢迎来到震亚诉讼网！
+            <a href="http://company.zhenyalaw.com/" style="margin-left:-20px">
+                <img src="img/qiyerukou.png"/>
+            </a>
+        </a>
+
+        <a class="am-topbar-right" href="tel:021-5109-6620">
+            <!--<img src="img/dianhua1.png"/>--><span class="am-icon-phone"></span>
+            021-5109-6620
+            <!--<small>（通话免费）</small>-->
+        </a>
+
+    </div>
+</header>
+<!--首页固定头部-->
+
+
+<div id="top_navBar" class="am-container">
+    <ul class="am-avg-lg-9 navs">
+        <li><img class="nav1" src="img/1.png"/></li>
+        <li>
+            <div class="transparent">&nbsp;&nbsp;&nbsp;&nbsp;aa</div>
+        <li>
+            <a <!--if{!$topCategoryInfo['class_id']}--> class="active" <!--{/if}-->  href="__ROOT__/">
+            首页<br/>
+            <span class="am-topbar-en ">Home</span>
+            </a>
+        </li>
+        <!--list{app="DuxCms" label="categoryList" limit=6 parent_id=0  order="sequence desc" }-->
+
+        <li>
+            <a href="{$list.curl}" <!--if{$list['class_id']==$topCategoryInfo['class_id']}--> class="active"
+            <!--{/if}-->>{$list.name}<br/>
+            <span class="am-topbar-en">{$list.keywords}</span>
+            </a>
+        </li>
+        <!--{/list}-->
+        <li>
+            <a href='{U("DuxCms/Form/index",array("name"=>'guestbook'))}'>在线咨询<br/>
+                <span class="am-topbar-en">Q&A</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<!--一级导航-->

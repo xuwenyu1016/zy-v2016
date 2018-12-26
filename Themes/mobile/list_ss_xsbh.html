@@ -1,0 +1,92 @@
+<!--#include file="head.html"-->
+<img id="ligitationPic" src="images/pageImg/3.jpg" width="100%">
+<!--次级页面头图-->
+
+ <div id="mainPageButton">
+     <!--list{app="DuxCms" label="categoryList" limit=2 parent_id=26  }--> 
+    <a id="ButtonDanger" class="am-badge am-badge-danger" href="{$list.curl}">{$list.name}</a>
+   
+    <!--{/list}-->
+    
+        <li class="am-dropdown" data-am-dropdown>
+      <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+        ... <span class="am-icon-caret-down"></span>
+      </a>
+
+      <ul class="am-dropdown-content">
+        <li class="am-dropdown-header">Others</li>
+           
+         <!--list{app="DuxCms" label="categoryList" limit=7 parent_id=4}--> 
+           
+        <li><a href="{$list.curl}">{$list.name}</a></li>
+     
+           <!--{/list}-->
+           
+      </ul>
+    </li>
+  </div>
+ 
+<!--诉讼业务头图下按钮下按钮-->
+
+ <!--list{app="DuxCms" label="contentList" limit=7 class_id=11}--> 
+    <div class="lawsuitBox">
+        <div class="boxImg">
+         <a href="{$list.aurl}"><img src="{$list.image}" alt="" width="100"/></a>
+    </div>
+
+        <div class="boxContent">
+        <a class="boxContent_a" href="{$list.aurl}">
+            <span class="boxContent_H">{$list.title}</span>
+        </a>
+        <p class="boxContent_P" style="height:50px">{$list.description}</p>
+        <!--<a class="boxContent_A" href="/">查看更多</a>-->
+    </div>
+    </div>
+
+  <!--{/list}-->
+
+
+<!--七大诉讼业务-->
+
+
+
+<div class="am-gotop am-gotop-fixed am-active" data-reactid=".0.3" data-am-widget="gotop" icon="arrow-up">
+    <div>
+        <a data-reactid=".0.3.0" href="#top">
+            <span class="am-icon-arrow-up am-gotop-icon" data-reactid=".0.3.0.1" icon="arrow-up"></span>
+        </a>
+    </div>
+    <!--右下角小箭头-->
+</div>
+
+
+<div id="qaBtn">
+    <a class="am-icon-faq am-icon-btn am-icon-question-circle" title="常见问题" href="./Q&A.html"></a>
+</div>
+    </body>
+<!--#include file="foot.html"-->
+<script src="js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="js/amazeui.min.js"></script>
+<script type="javascript">
+    $('#your-slider').flexslider({
+        playAfterPaused: 8000,
+        before: function(slider) {
+            if (slider._pausedTimer) {
+                window.clearTimeout(slider._pausedTimer);
+                slider._pausedTimer = null;
+            }
+        },
+        after: function(slider) {
+            var pauseTime = slider.vars.playAfterPaused;
+            if (pauseTime && !isNaN(pauseTime) && !slider.playing) {
+                if (!slider.manualPause && !slider.manualPlay && !slider.stopped) {
+                    slider._pausedTimer = window.setTimeout(function() {
+                        slider.play();
+                    }, pauseTime);
+                }
+            }
+        }
+        // 设置其他参数
+    });
+</script>

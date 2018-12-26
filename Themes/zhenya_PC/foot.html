@@ -1,0 +1,84 @@
+
+
+<footer class="am-footer">
+    <div class="am-g am-g-fixed am-foot-bottom">
+        <span>
+            上海律所地址:静安区成都北路333号招商局广场南楼18楼&nbsp;&nbsp;&nbsp;
+            <a href="tel:021-5109-6620" title="欢迎致电震亚律所"  style="color:white"><span class="am-icon-phone"></span> 021-5109-6620</a>
+        </span>
+        <!--<br/>-->
+        <!--<span>北京律所地址:朝阳区朝外大街乙12号昆泰国际大厦910A&nbsp;&nbsp;13911001770</span>-->
+        <br/>
+        <span>版权所有2017年&nbsp;&nbsp;&nbsp;保留所有权利&nbsp;&nbsp;&nbsp;<a href="http://www.miitbeian.gov.cn" style="color:white">沪ICP备12048123号</a>&nbsp;&nbsp;&nbsp;
+            <!--<a href="http://mail.zhenyalaw.com/webmail/index.php" style="color:white">-->
+            <a href="http://exmail.qq.com/login" style="color:white">
+                邮箱登陆</a>|
+            <a href="http://zhenyalaw.gnway.cc:1888" style="color:white">律师平台</a>
+        </span>
+    </div>
+</footer>
+<!--首页尾部-->
+
+
+<!--<script>-->
+<!--var _hmt = _hmt || [];-->
+<!--(function() {-->
+  <!--var hm = document.createElement("script");-->
+  <!--hm.src = "//hm.baidu.com/hm.js?cdad259b3fb1a8fe27de4ca6d5bb544d";-->
+  <!--var s = document.getElementsByTagName("script")[0];-->
+  <!--s.parentNode.insertBefore(hm, s);-->
+<!--})();-->
+<!--</script>-->
+<!--&lt;!&ndash;北京&ndash;&gt;-->
+
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.min.js"></script>
+<script src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.ie8polyfill.min.js"></script>
+<script src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.widgets.helper.min.js"></script>
+
+<script>
+    $(function(){
+        var gh_input_search = $("#search_mini_form input#search,.gh-search-reset"),
+                gh_search_reset = $("#gh-search-reset"),
+                form_search     = $(".form-search"),
+                input_search    = $("#search");
+
+        $(gh_input_search).focus(function(){
+            //$(form_search).css({"background":"#fff","border-left":"1px #D5D5D5 solid"});
+            $(input_search).css("width","200px");
+            $(gh_search_reset).css("display","inline-block");
+        })
+        $(gh_input_search).blur(function(){
+            var this_val=$("#search_mini_form input#search").val();
+            if(this_val.length>0 && this_val!="Search"){
+                $(gh_search_reset).css("display","inline-block");
+            }else{
+                //$(form_search).css({"background":"none","border-left":"none"});
+                $(input_search).css("width","57px").attr("value","");
+                $(gh_search_reset).css("display","none");
+            }
+        })
+    })
+</script>
+<!--search box-->
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".mainPagevideo_1").mousedown(function(){
+            $(".mainPagevideo_1").slideUp(1000);
+            $(".showPagevideo_1").slideDown(1000);
+        });
+
+    })
+</script>
+<!--视频js-->
+
+<script>
+
+    var _hmt = _hmt || []; (function() { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?7705e9a0099666098aa67d7b57b53aff"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })(); </script>
+
+<script type="text/javascript" charset="utf-8" async src="http://lxbjs.baidu.com/lxb.js?sid=10922645"></script>
+
+</body>
+</html>

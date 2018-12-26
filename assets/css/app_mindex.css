@@ -1,0 +1,471 @@
+/*mobile index*/
+
+header {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.am-header-fixed {
+    background-color: rgb(221, 0, 9);
+}
+
+header h1 a {
+    font-family: "Microsoft YaHei", SimHei, sans-serif;
+    color: white;
+    font-weight: 600;
+}
+
+header .am-header-left a {
+    color: white;
+}
+
+header .am-header-right a {
+    color: white;
+}
+
+header ul.am-dropdown-content > li > a:focus, ul.am-dropdown-content > li > a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(221, 0, 9, 0.6);
+}
+
+header .am-dropdown-content {
+    min-width: 120px;
+}
+
+header .am-dropdown-content > li:hover {
+    background-color: rgba(221, 0, 9, 0.6);
+}
+
+header .am-dropdown-content > li > a {
+    text-align: center;
+}
+
+.am-navbar-default .am-navbar-nav {
+    background-color: rgba(221, 0, 9, 0.6);
+}
+
+.am-navbar-default .am-navbar-actions {
+    background-color: rgba(221, 0, 9, 0.6);
+}
+
+.am-navbar-default .am-navbar-actions a {
+    border-bottom: 1px solid rgb(221, 0, 9);
+}
+
+.am-with-fixed-navbar {
+    padding-bottom: 50px;
+}
+
+.am-navbar-nav a .am-navbar-label {
+    text-align: center;
+}
+
+.am-dropdown-up .drop-up-o {
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+
+.am-active .am-btn-danger.am-dropdown-toggle, .am-btn-danger.am-active, .am-btn-danger:active {
+    background-image: none;
+    background-color: transparent;
+}
+
+.bottom-nav {
+    background-color: rgba(221, 0, 9, 0.6);
+    position: fixed;
+    bottom: -2px;
+    width: 100%;
+    height: 50px;
+}
+
+.bottom-nav .am-navbar-nav li a span {
+    color: white;
+}
+
+.bottom-nav .am-navbar-nav li .am-dropdown-content {
+    background-color: rgba(221, 0, 9, 0.6);
+    color: white;
+}
+
+.bottom-nav .am-navbar-nav li .am-dropdown-content li a {
+    color: white;
+    height: 45px;
+    line-height: 45px;
+}
+
+.am-dropdown-up .am-dropdown-content::after {
+    border-top-color: rgba(221, 0, 9, 0.6);
+    bottom: -7px;
+}
+
+.bottom-nav .am-dropdown-content li a {
+    display: block;
+    width: 100%;
+    height: 40%;
+    box-shadow: inset 0 1px rgba(220, 220, 220, .25);
+    padding-left: 20px;
+    padding-right: 36px;
+    color: white;
+}
+
+.bottom-nav .am-dropdown-content li a span {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+}
+
+.bottom-nav .am-dropdown-content li a [class*="am-icon"]::before {
+    padding-bottom: 18px;
+}
+
+.first {
+    background-color: rgb(248, 248, 248);
+    padding-bottom: 15px;
+}
+
+.first .title {
+    font-size: 20px;
+    text-align: center;
+    width: 85%;
+    margin: 10px auto;
+    color: #555;
+    font-weight: 700;
+}
+
+.first .detail {
+    font-size: 14px;
+    width: 90%;
+    margin: 0 auto;
+    text-indent: 28px;
+    color: #555;
+}
+
+.second .title {
+    font-size: 20px;
+    text-align: center;
+    width: 85%;
+    margin: 10px auto;
+    color: #555;
+    font-weight: 700;
+}
+
+.second .am-g {
+    padding-bottom: 5px;
+}
+
+.second .am-g a img {
+    border-radius: 2px;
+}
+
+.second .am-g a .law-title {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #555;
+    padding-bottom: 5px;
+}
+
+.second .am-g img {
+    width: 136px;
+    height: 182px;
+    display: block;
+    margin: 0 auto;
+}
+
+.third {
+    padding-bottom: 10px;
+}
+
+.third .title {
+    font-size: 20px;
+    text-align: center;
+    width: 85%;
+    margin: 10px auto 5px auto;
+    color: #555;
+    font-weight: 700;
+}
+
+.third .sub-title {
+    font-size: 14px;
+    text-align: center;
+    width: 85%;
+    margin: 0 auto 10px auto;
+    color: #555;
+}
+
+.third .am-form fieldset {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+.third .am-form fieldset .am-g > div {
+    padding-left: 0;
+}
+
+.third .am-form fieldset .am-g > div label {
+    font-size: 14px;
+    color: #555;
+}
+
+.third .am-form fieldset .am-g > div .am-form-group {
+    margin-bottom: 0;
+    height: 96px;
+}
+
+.third .am-form fieldset .button-p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.third .am-form fieldset .button-p button {
+    background-color: rgb(221, 0, 9);
+    border-radius: 5px;
+    width: 120px;
+    color: white;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.four {
+    background-color: rgb(248, 248, 248);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.four .title {
+    font-size: 20px;
+    text-align: center;
+    width: 85%;
+    margin: 0 auto 5px auto;
+    color: #555;
+    font-weight: 700;
+}
+
+.four .detail {
+    font-size: 14px;
+    width: 90%;
+    margin: 5px auto;
+    text-indent: 28px;
+    color: #555;
+}
+
+.four .am-img-responsive {
+    display: block;
+    margin: 0 auto;
+}
+
+.five {
+    padding-bottom: 20px;
+}
+
+.five .title {
+    font-size: 20px;
+    text-align: center;
+    width: 85%;
+    margin: 10px auto;
+    color: #555;
+    font-weight: 700;
+}
+
+.five .am-g {
+    padding-bottom: 5px;
+}
+
+.five .am-g a img {
+    border-radius: 2px;
+}
+
+.five .am-g a .law-title {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #555;
+    padding-bottom: 5px;
+}
+
+.five .am-g img {
+    width: 136px;
+    height: 82px;
+    display: block;
+    margin: 0 auto;
+}
+
+.five .check-more {
+    background-color: rgb(221, 0, 9);
+    border-radius: 5px;
+    width: 120px;
+    color: white;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.six {
+    padding-bottom: 60px;
+    background-color: rgb(248, 248, 248);
+    padding-top: 5px;
+}
+
+.six .title {
+    font-size: 20px;
+    text-align: center;
+    width: 85%;
+    margin: 10px auto;
+    color: #555;
+    font-weight: 700;
+}
+
+.six .am-gallery-default{padding-bottom: 5px;}
+
+.six .am-gallery-default li .am-gallery-item h3 {
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+}
+
+.six .check-more {
+    background-color: rgb(221, 0, 9);
+    border-radius: 5px;
+    width: 120px;
+    color: white;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+@media screen and (min-width: 500px) {
+    .first {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .second {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .third {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .second {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .four {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .five {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .six {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+}
+
+
+
+/*以下为子页面*/
+.first-m img{display: block;margin: 0 auto;}
+
+.btns{padding-top: 15px;}
+.btns div a{display: block;margin:0 auto;width: 130px;}
+.btns div .sh-firm{background-color: rgb(221, 0, 9);color: white;}
+/*上面一行是上海震亚按钮为红，北京震亚页面就在相应页面改成 .btns div .bj-firm*/
+
+.four-m {
+    padding-top: 15px;
+    padding-bottom: 55px;
+}
+
+
+.four-m .detail {
+    font-size: 14px;
+    width: 90%;
+    margin: 5px auto 10px auto;
+    text-indent: 28px;
+    color: #555;
+}
+
+.five-m {
+    padding-top: 15px;
+    padding-bottom: 55px;
+}
+
+.five-m .am-g div a img{
+    display: block;;margin:0 auto;
+}
+
+
+.five-m .detail {
+    font-size: 14px;
+    width: 90%;
+    margin: 5px auto 10px auto;
+    text-indent: 28px;
+    color: #555;
+    text-align: center;
+}
+
+.five-m .detail-name {
+    font-size: 14px;
+    width: 90%;
+    margin: 5px auto 10px auto;
+    color: #555;
+    text-align: center;
+}
+
+.five-m .file-img{margin:0 auto;display: block;max-width:80%;}
+
+.five-m .person-file{margin-top: 10px;}
+.five-m .person-file p{ font-size: 14px;
+    width: 90%;
+    margin: 5px auto 5px auto;
+    color: #555;
+}
+.iw_poi_title {color:rgb(221, 0, 9);font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+.iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+
+.six-m{padding-bottom: 15px;}
+.six-m form{margin-top: 20px;}
+.six-m form .am-btn-default{width: 200px;background-color: rgb(221, 0, 9);color: white;display: block;margin:0 auto;border-radius: 5px;}
+
+@media screen and (min-width: 500px) {
+    .btns {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .four-m {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .five-m {
+        width: 500px;
+        margin: 0 auto;
+    }
+    .six-m{
+        width: 500px;
+        margin: 0 auto;
+    }
+}

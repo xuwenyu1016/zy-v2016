@@ -1,0 +1,134 @@
+body{padding-top: 93px;font-family:"Segoe UI","Lucida Grande",Helvetica,Arial,Simhei,FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",FontAwesome,sans-serif;}
+.fixedBox{position: fixed;left: 0;top:0;width: 100%;z-index: 1000;}
+header.am-header-default{background-color: white;}
+header.am-header .am-header-nav a img{height: 36px;}
+header.am-header-default .am-header-nav>a{color: #333;}
+header.am-header-default ul.am-dropdown-content{min-width: 130px;}
+header.am-header-default ul.am-dropdown-content>li>a{text-align: center;padding-left: 10px;padding-right: 10px;
+    font-size: 14px;}
+
+.telNav{text-align: center;padding-top: 6px;padding-bottom: 6px;border:none;height: 44px;}
+.telNav img{display: inline-block;vertical-align: middle;height: 32px;}
+.telNav a{display: inline-block;vertical-align: middle;font-weight: 600;font-size: 16px;height: 28px;
+    line-height: 28px;color: #333;}
+
+nav.telNav{background-color: rgb(246,247,249);}
+footer.telNav{background-color: rgb(21,31,66);border-top:10px solid white;color: white;height: 54px;}
+footer.telNav a{color: white;}
+
+.greyBg{background-color: rgb(246,247,249);}
+h2{text-align: center;font-weight: 600;margin: 10px auto;font-size: 20px;}
+h2.en{letter-spacing: 2px;font-size: 24px;font-family: "Arial", Simhei;}
+
+.titleBox h2{margin-top: 0;margin-bottom: 5px;color: #333;line-height: 1.2;}
+.titleBox h2.en{margin-bottom: 0;margin-top: 10px;color: #333;line-height: 1.2;}
+
+
+h4{font-size: 16px;margin: 10px auto;}
+h5{font-size: 14px;margin: 10px auto;}
+p{font-size: 14px;margin: 10px auto;}
+
+.sectionBreaker{border-top: 8px solid rgb(246,247,249);margin: 0 auto;}
+
+
+.indexServices ul li:nth-child(1){padding-right: .5rem;}
+.indexServices ul li:nth-child(2){padding-left: .5rem;}
+.indexServices ul li .innerBox{position: relative;}
+.indexServices ul li .innerBox p{margin: 0 auto;padding-left: 10px;position: absolute;bottom: 5px;
+    width: 100%;color: white;}
+
+.indexLocation p{margin: 5px auto;text-align: center;font-size: 12px;font-weight: 600;}
+
+.contact{background-color: rgb(41,44,49);}
+.contact h2{color: white;}
+.contact #map{width:100%;height:200px;font-size:12px;}
+
+.contact article.form{padding: 1rem .7rem 0 .7rem;}
+.contact article.form h4{color: white;margin-bottom: 0;}
+.contact article.form h5{color: rgb(197,197,197);margin-top: 0;margin-bottom: 15px;}
+.contact article.form form .formContainer{margin: 10px auto;}
+.contact article.form form .formContainer span{display: inline-block;color: rgb(197,197,197);
+    width: 65px;font-size: 12px;vertical-align: middle;line-height: 32px;}
+.contact article.form form .formContainer span sup{color: red;}
+.contact article.form form input,.contact article.form form textarea{display: inline-block;height: 32px;line-height: 28px;
+    padding: 2px 5px;width: calc(100% - 75px);width: -webkit-calc(100% - 75px);border: 1px solid rgb(26,29,34);
+    background-color: rgb(26,29,34);color: white; }
+.contact article.form form .formContainer textarea{height: 120px;}
+.contact article.form form .validateContainer input{width: 100px;}
+.contact article.form form .validateContainer button{width: 124px;display: inline-block;height:32px;line-height: 28px;
+    padding: 2px 5px;border: none;background-color: rgb(220,72,60);color: white;font-size: 14px; }
+.contact article.form form .validateContainer span.notes{display: block;width: 90%;color: rgb(220,72,60);}
+
+.contact form .buttonBox{margin-bottom: 0;}
+.contact form .buttonBox input[type=button],.contact form .buttonBox button{color: white;width: 85%;margin: 10px auto 0 auto;
+    border: none;display: block;height: 32px;line-height: 32px;}
+.contact form .buttonBox input[type=button]{background-color:  rgb(80,80,80);}
+.contact article.form form .formContainer.buttonBox button{background-color:  rgb(220,72,60);}
+
+.business h5{color:rgb(133,133,133);font-weight: 500;}
+.business h5.topic{color: #333;font-weight: 600;}
+.business p{color:rgb(133,133,133);}
+
+section.me .galleryBox>img{display: inline-block;width: 49%;vertical-align: middle;}
+section.me .galleryBox .rightDetails{display: inline-block;width: calc(100% - 51%);width: -webkit-calc(100% - 51%);vertical-align: middle;}
+section.me .galleryBox .rightDetails img{width: 80%;}
+section.me .galleryBox .rightDetails h5{font-size: 12px;margin: 5px auto;}
+section.me .galleryBox .rightDetails a{margin-top: 20px;height: 32px;line-height: 32px;text-align: center;
+    background-color: rgb(6,6,8);color: white;width: 110px;font-size: 14px;display: block;}
+
+section.team ul li{padding: 0 .5rem 1rem .5rem;}
+/*section.team ul li img{width: 112px;height: 172px;}*/
+section.team ul li p{text-align: center;margin: 5px auto;}
+section.team ul li p b{font-size: 16px;}
+section.team ul li p.goodAt{text-align: left;margin-bottom:0;}
+section.team ul li p.details{text-align: justify;margin-top: 0;}
+
+.lawsuits .am-slider{box-shadow: none;background-color: transparent;}
+.lawsuits .am-slider .am-direction-nav{display: none;}
+.lawsuits .am-slider-default .am-control-nav li a{background-color: rgb(231, 231, 231);}
+.lawsuits .am-slider-default .am-control-nav li a.am-active{background-color: #333;}
+.lawsuits ul li .innerBox h4{margin: 0 auto 0 0;padding-bottom: 5px;padding-left: 5px;}
+.lawsuits ul li .innerBox h4 span{border-left: 4px solid  rgb(136,22,22);font-size: 16px;font-weight: 600;
+    padding-left: 4px;display: block;color: rgb(136,22,22);}
+.lawsuits ul li .innerBox hr{width: 120px;border-top: 2px solid black;margin: 0 auto 10px 10px;}
+.lawsuits ul li .innerBox p{padding-left: 10px;margin: 5px auto;}
+.disputeServices hr.breakBlock{border-top: 4px solid rgb(238,238,238);margin: 10px auto 15px auto;}
+
+/*.lawsuits .am-tabs .am-tabs-nav{border: none;}*/
+/*.lawsuits .am-tabs .am-tabs-nav li a{padding: 0;font-size: 14px;margin: 5px auto;color: #333;text-align: center;*/
+    /*line-height: 32px;height: 32px;border: none;font-weight: 700;}*/
+/*.lawsuits .am-tabs .am-tabs-nav li.am-active a{background-color: #a90400;color: white;}*/
+
+/*.lawsuits .am-nav>li>a:focus, .lawsuits .am-nav>li>a:hover{background-color: transparent;}*/
+
+/*.lawsuits .am-tabs .am-tabs-bd{border: none;}*/
+/*.lawsuits .am-tabs .am-tabs-bd .am-tab-panel{padding: 0 0 10px 0;}*/
+/*.lawsuits .am-tabs .am-tabs-bd .am-tab-panel .am-slider-default{box-shadow: none;}*/
+/*.lawsuits .am-tabs .am-tabs-bd .am-tab-panel .am-slider-default .innerBox{position: relative;}*/
+/*.lawsuits .am-tabs .am-tabs-bd .am-tab-panel .am-slider-default p{font-size: 14px;text-align: center;margin-bottom: 0;}*/
+/*.lawsuits .am-tabs .am-tabs-bd .am-tab-panel .am-slider-default .am-control-nav{bottom: -18px;}*/
+/*.lawsuits .am-tabs .am-tabs-bd .am-tab-panel .am-slider-default .am-control-nav li a.am-active{background-color: #a90400;}*/
+/*.lawsuits .am-tabs .am-tabs-bd .am-tab-panel .am-slider-default .am-direction-nav{display: none;}*/
+/*.lawsuits .am-tabs .am-tabs-bd .am-tab-panel .am-slider-default .am-direction-nav a{background-color: rgba(0,0,0,.65);}*/
+/*.lawsuits .am-tabs .am-tabs-bd .am-tab-panel .am-slider-default .am-direction-nav a:before{content: "\f053";}*/
+/*.lawsuits .am-tabs .am-tabs-bd .am-tab-panel .am-slider-default .am-direction-nav a.am-next:before{content: "\f054";}*/
+
+.articleList{padding: .5rem 1rem 1rem 1rem;}
+.articleList .newsContainer .dux-page{text-align: center;}
+.articleList .newsContainer .dux-page span,.articleList .newsContainer .dux-page a{margin-left: 5px;margin-right: 5px;color: #333;}
+.articleList .newsContainer .dux-page span.current{color:red;font-weight: 700;}
+
+.articleList .newsContainer .newsBox img{display: inline-block;width: 115px;vertical-align: middle;}
+.articleList .newsContainer .newsBox .innerBox{display: inline-block;width: calc(100% - 120px);
+    width: -webkit-calc(100% - 120px);vertical-align: middle;color: #333;}
+.articleList .newsContainer .newsBox .innerBox .topic{font-size: 16px;font-weight: 600;margin: 5px auto;}
+.articleList .newsContainer .newsBox .innerBox .content{font-size: 14px;margin: 5px auto;}
+
+.development p{text-align: justify;}
+.development .imgBox{background: url(/Uploads/2017-08-29/15.jpg) center no-repeat;width: 100%;height: 45vw;margin-top: 10px;
+    background-size: cover;text-align: center;color: white;font-size: 14px;font-weight:600;letter-spacing: 1px;
+    display: flex;align-items:center;justify-content:center;}
+
+.lawServices ul li .innerBox{width: 90%;margin: 0 auto;}
+.lawServices ul.oneContentBox li .innerBox{width: 70%;margin: 0 auto;}
+.lawServices ul.oneContentBox li .innerBox img{height: 38vw;}

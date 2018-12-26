@@ -1,0 +1,65 @@
+
+<!--#include file="head.html"-->
+<img id="topImg" src="img/pageImg/6.jpg" class="am-img-responsive" alt=""/>
+<!--律所简介头图-->
+
+<div class="am-g am-g-fixed">
+    <div class="am-u-md-9 am-u-md-push-3">
+        <div class="am-g">
+            <ol class="am-breadcrumb">
+                <li><a href="__ROOT__/">首页</a></li>
+                <li><a>广纳英才</a></li>
+                <li class="am-active">职位信息</li>
+            </ol>
+
+            <div class="am-container am-hr-info">
+                <p class="info-title"><b><font style="font-size:22px">{$contentInfo.zhiwei}</font></b></p>
+                <div class="am-g am-g-fixed">
+                    <div class="am-u-sm-2"><b>发布时间：</b></div>
+                    <div class="am-u-sm-2">{date('Y-m-d',$contentInfo['time'])}</div>
+                    <div class="am-u-sm-2"><b>工作地点：</b></div>
+                    <div class="am-u-sm-2">  {$contentInfo.gongzuodidian}</div>
+                    <div class="am-u-sm-2"><b>工作经验：</b></div>
+                    <div class="am-u-sm-2">{$contentInfo.jy}</div>
+                </div>
+
+                <div class="am-g am-g-fixed">
+                    <div class="am-u-sm-2"><b>工作性质：</b></div>
+                    <div class="am-u-sm-2">{$contentInfo.gzxz} </div>
+                    <div class="am-u-sm-2"><b>最低学历：</b></div>
+                    <div class="am-u-sm-2">{$contentInfo.zdxl}</div>
+                    <div class="am-u-sm-2"><b>招聘人数：</b></div>
+                    <div class="am-u-sm-2">{$contentInfo.zprs}</div>
+                </div>
+
+                <p class="info-dep"><b>职位描述</b></p>
+                <p class="info-qlf">任职资格和条件：</p>
+              {$contentInfo.content}
+                <p class="info-dep"><b>联系方式:</b></p>
+                <p class="conWay">{$contentInfo.lxfs}</p>
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+    <div class="am-u-md-3 am-u-md-pull-9 my-sidebar">
+        <ul class="am-nav">
+            <li class="am-nav-header">广纳英才</li>
+            <li><a href="">职位信息</a></li>
+          
+        </ul>
+    </div>
+
+</div>
+
+<!--#include file="foot.html"-->

@@ -1,0 +1,95 @@
+<!--#include file="head.html"-->
+<img id="ligitationPic" src="images/pageImg/4.jpg" width="100%">
+<!--次级页面头图-->
+
+<div id="mainPageButton">
+      <!--list{app="DuxCms" label="categoryList" limit=3 parent_id=5  }-->
+    <a id="ButtonDanger" class="am-badge am-badge-danger" href="{$list.curl}">{$list.name}</a>
+    
+    <!--{/list}-->
+    <!--<li class="am-dropdown" data-am-dropdown>-->
+    <!--<a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">-->
+    <!--... <span class="am-icon-caret-down"></span>-->
+    <!--</a>-->
+
+    <!--<ul class="am-dropdown-content">-->
+    <!--<li class="am-dropdown-header">Others</li>-->
+    <!--<li class="am-active"><a href="./ligitationFile/disablingInjury.html">1.劳动工伤</a></li>-->
+    <!--<li><a href="#">2.刑事辩护</a></li>-->
+    <!--<li><a href="#">3.交通伤残</a></li>-->
+    <!--<li><a href="#">4.遗产继承</a></li>-->
+    <!--<li><a href="#">5.房产拆迁</a></li>-->
+    <!--</ul>-->
+    <!--</li>-->
+</div>
+<!--联系我们头图下按钮下按钮-->
+
+<div id="contactUs">
+
+        <div class="contact_box" style="width: 90%;margin:10px auto;">
+            <div class="contact_info">
+                <span class="ExpHtl">我们期待着您的回音</span>
+                <br/>
+                <span class="ExpHtl">咨询热线：021-51877200</span>
+                <p class="contact_boxP">
+                    总 机：021-5019 0999<br />
+                    传 真：021-5019 9119<br />
+                    地 址：上海市浦东新区商城路660号乐凯大厦1501室<br />
+                    邮 编：201200<br />
+                    位 置：近南泉北路、世纪大道口<br />
+                    地 铁：地铁9号线商城路2号出口<br />
+                    公 交：浦东11路、992路、浦卫专线、隧道夜宵线、181路、隧道九线、轨道交通9号线<br/>
+                    陆家嘴金融城2路、陆家嘴金融城3路、浦东21路、783路定班、沪南线均可到达</p>
+
+                <p style="margin: 10px;">
+                    <iframe width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://ditu.google.cn/maps?f=q&amp;source=s_q&amp;hl=zh-CN&amp;geocode=&amp;q=%E4%B8%8A%E6%B5%B7%E5%B8%82%E6%B5%A6%E4%B8%9C%E6%96%B0%E5%8C%BA%E5%95%86%E5%9F%8E%E8%B7%AF660%E5%8F%B7%E4%B9%90%E5%87%AF%E5%A4%A7%E5%8E%A61501%E5%AE%A4&amp;aq=&amp;sll=35.86166,104.195397&amp;sspn=45.423451,93.076172&amp;brcurrent=3,0x35b270c2fb6cd7df:0xf084ad5820392aa,0,0x35ad8c73cd3952c7:0xbb190e9364c4e592%3B5,0,0&amp;ie=UTF8&amp;hq=%E4%B8%8A%E6%B5%B7%E5%B8%82%E6%B5%A6%E4%B8%9C%E6%96%B0%E5%8C%BA%E5%95%86%E5%9F%8E%E8%B7%AF660%E5%8F%B7%E4%B9%90%E5%87%AF%E5%A4%A7%E5%8E%A61501%E5%AE%A4&amp;ll=31.230762,121.518516&amp;spn=0.006295,0.006295&amp;t=m&amp;output=embed"></iframe><br />
+                </p>
+            </div>
+        </div>
+
+    <!--联系我们-浦东右侧板块-->
+
+</div>
+<!--联系我们-浦东总部右侧板块-->
+
+
+<div class="am-gotop am-gotop-fixed am-active" data-reactid=".0.3" data-am-widget="gotop" icon="arrow-up">
+    <div>
+        <a data-reactid=".0.3.0" href="#top">
+            <span class="am-icon-arrow-up am-gotop-icon" data-reactid=".0.3.0.1" icon="arrow-up"></span>
+        </a>
+    </div>
+    <!--右下角小箭头-->
+</div>
+
+
+<div id="qaBtn">
+    <a class="am-icon-faq am-icon-btn am-icon-question-circle" title="常见问题" href="./../Q&A.html"></a>
+</div>
+</body>
+<!--#include file="foot.html"-->
+<script src="js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="js/amazeui.min.js"></script>
+<script type="javascript">
+    $('#your-slider').flexslider({
+        playAfterPaused: 8000,
+        before: function(slider) {
+            if (slider._pausedTimer) {
+                window.clearTimeout(slider._pausedTimer);
+                slider._pausedTimer = null;
+            }
+        },
+        after: function(slider) {
+            var pauseTime = slider.vars.playAfterPaused;
+            if (pauseTime && !isNaN(pauseTime) && !slider.playing) {
+                if (!slider.manualPause && !slider.manualPlay && !slider.stopped) {
+                    slider._pausedTimer = window.setTimeout(function() {
+                        slider.play();
+                    }, pauseTime);
+                }
+            }
+        }
+        // 设置其他参数
+    });
+</script>

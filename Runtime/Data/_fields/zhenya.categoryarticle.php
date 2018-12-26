@@ -1,0 +1,1 @@
+a:7:{i:0;s:8:"class_id";i:1;s:11:"fieldset_id";i:2;s:11:"content_tpl";i:3;s:13:"config_upload";i:4;s:13:"content_order";i:5;s:4:"page";s:5:"_type";a:6:{s:8:"class_id";s:7:"int(10)";s:11:"fieldset_id";s:7:"int(10)";s:11:"content_tpl";s:12:"varchar(250)";s:13:"config_upload";s:4:"text";s:13:"content_order";s:12:"varchar(250)";s:4:"page";s:7:"int(10)";}}

@@ -1,0 +1,263 @@
+
+<!--#include file="head.html"-->
+
+
+<div class="am-slider am-slider-default" data-am-flexslider id="demo-slider-0">
+    <ul class="am-slides">
+        <!--<li><a><img src="/Uploads/2016-11-01/581807b01e0d4.jpg" alt="震亚律所"/></a></li>-->
+        <!--<li>-->
+            <!--<a href="/Article/Category/index/class_id/38.html">-->
+                <!--<img src="/Uploads/2016-12-07/5847c04d3fe30.jpg" alt="震亚律所">-->
+            <!--</a>-->
+        <!--</li>-->
+        <li>
+            <!--<a>-->
+                <img src="/Themes/zhenya_PC/img/2.jpg" alt="震亚律所">
+            <!--</a>-->
+        </li>
+        <li>
+            <!--<a>-->
+            <img src="/Themes/zhenya_PC/img/lb.jpg" alt="震亚律所">
+            <!--</a>-->
+        </li>
+    </ul>
+
+
+</div>
+<!--首页轮播-->
+
+
+
+<div class="sec_nav"  style="position: relative;">
+
+    <div data-am-sticky="{top:80}">
+        <button class="am-btn" style="position: absolute;background-color: transparent;">
+            <img src="/Uploads/2016-08-04/57a2db9575b05.jpg" style="position: absolute;left:0;" draggable="false"/>
+        </button>
+    </div>
+
+    <div class="am-container">
+        <div class="title_one">
+            <a class="newsHead" href="/index.php?s=/Article/Category/index/class_id/7.html">行业领域</a>
+        </div>
+
+
+        <ul class="am-avg-sm-6 am-thumbnails">
+            <!--list{app="DuxCms" label="categoryList" parent_id="4" order="sequence desc" }-->
+            <li>
+                <a class="am-badge" href="{$list.curl}" title="{$list.name}">
+                    <img src="{$list.image}" alt="{$list.name}" draggable="false"/>
+                    <span>
+                       {$list.name}
+                    </span>
+                </a>
+            </li>
+            <!--{/list}-->
+            <!--list{app="DuxCms" label="categoryList" limit="2" parent_id="26" order="sequence desc"}-->
+            <li>
+                <a class="am-badge" href="{$list.curl}" title="{$list.name}">
+                    <img src="{$list.image}" alt="{$list.name}" draggable="false"/>
+                    <span>
+                       {$list.name}
+                    </span>
+                </a>
+            </li>
+            <!--{/list}-->
+        </ul>
+
+
+    </div>
+
+    <!--<div data-am-sticky="{top:80}">-->
+
+    <!--</div>-->
+
+</div>
+<!--首页轮播下次级导航-->
+
+<div class="am-news am-container">
+
+
+
+    <div class="am-u-lg-6 am-u-md-12 mv-lft">
+
+        <div class="newsBox">
+            <div class="title_two">
+                <!--list{app="DuxCms" label="contentList" image="true" limit=1  class_id=15 }-->
+                <a class="newsHead" href="{$list.curl}">实时动态</a>
+
+
+                <a class="more" href="{$list.curl}">更多</a>
+                <!--{/list}-->
+            </div>
+
+
+            <!--list{app="DuxCms" label="contentList" image="true" limit=3  class_id=15 }-->
+
+            <div class="am-g" style="border-bottom:1px dotted grey;">
+                <div class="am-u-sm-3">
+                    <a href="{$list.curl}">
+                        <img src="{cut_image($list.image,80,80)}" style="padding-top:11px;"/>
+                    </a>
+                </div>
+
+                <div class="am-u-sm-9">
+                    <div class="newsContent" style="height:90px;width:335px;">
+                        <p class="newsContentT">
+                            <a href="{$list.aurl}">{len($list.title,20)}</a>
+                        </p>
+                        <span class="date">{date('Y-m-d',$list['time'])}</span>
+                        <p class="newsContentR">
+                            <a href="{$list.aurl}">{$list.description}</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+
+                        <div class="newsContentB">
+                            <a href="{$list.curl}">  <img src="{cut_image($list.image,120,100)}"/></a>
+                            <div class="newsContent">
+                                <p class="newsContentT">
+                                    <a href="{$list.aurl}">{$list.title}</a>
+                                </p>
+                                <span class="date">{date('Y-m-d',$list['time'])}</span>
+                                <p class="newsContentR">
+                                    <a href="{$list.aurl}">{$list.description}</a>
+                                </p>
+                            </div>
+                        </div>
+            -->
+            <!--{/list}-->
+
+        </div>
+    </div>
+
+
+    <!--首页新闻动态-->
+    <div class="am-u-lg-6 am-u-md-12">
+        <div class="newsBox">
+            <div class="title_two">
+                <!--list{app="DuxCms" label="contentList" image="true" limit=1  class_id=16 }-->
+                <a class="newsHead"  href="{$list.curl}">成功案例</a>
+
+                <a class="more" href="{$list.curl}">更多</a>
+                <!--{/list}-->
+            </div>
+
+
+            <div class="exB">
+                <img src="img/5.jpg" alt="震亚法律咨询" title="震亚法律咨询"/>
+                <!--list{app="DuxCms" label="contentList" image="true" limit=1  class_id=16 }-->
+                <div class="exCon">
+                    <div class="extilBox">
+                        <a href="{$list.aurl}" class="extilBox_l">[{$list.keywords}]</a>
+                        <a href="{$list.aurl}" class="extilBox_r">{len($list.title,16)}</a>
+                    </div>
+                    <span class="exContP">
+                    {len($list.description,50)}
+                    </span>
+                    <span class="date_2">
+                      {date('Y-m-d',$list['time'])}
+                    </span>
+                </div>
+
+                <!--{/list}-->
+                <!--list{app="DuxCms" label="contentList" image="true" limit="1,3"  class_id=16 }-->
+                <div class="exCon1">
+                    <div class="extilBox">
+                        <a class="extilBox_l" href="{$list.aurl}">[{$list.keywords}]</a>
+                        <a class="extilBox_r new_span_1" href="{$list.aurl}">{len($list.title,16)}</a>
+                    </div>
+
+                    <span class="date_2">
+                        {date('Y-m-d',$list['time'])}
+                    </span>
+
+                </div>
+                <!--{/list}-->
+
+            </div>
+        </div>
+    </div>
+    <!--首页最新案例-->
+</div>
+<!--首页新闻案例+最新动态-->
+
+<div class="am-individual am-container am-listR-intro">
+    <!--改-->
+    <div class="title_two">
+        <!--list{app="DuxCms" label="contentList" image="true" limit=1 class_id=3}-->
+        <a class="newsHead"  href="{$list.curl}">团队介绍</a>
+
+        <a class="more" href="{$list.curl}">更多</a>
+        <!--{/list}-->
+    </div>
+
+
+    <div class="am-slider am-slider-default am-slider-carousel am-slider-b1"
+         data-am-flexslider="{itemWidth: 200, itemMargin: 5, slideshow: true, minItems: 4,  maxItems: 4}">
+        <ul class="am-slides">
+            <!--list{app="DuxCms" label="contentList" image="true" class_id=3 order="time desc"}-->
+            <li class="imgList">
+                    <a href="{$list.aurl}">
+                        <img src="{$list.image}" height="275" alt="{$list.title}" title="{$list.title}"/>
+                        <span class="imgList_Name">{$list.lsxm}</span>
+                    </a>
+            </li>
+            <!--{/list}-->
+        </ul>
+    </div>
+
+
+</div>
+<!--首页团队介绍-->
+
+
+<div class="firm_intro am-container cultural-zy">
+    <div class="title_two">
+        <a class="newsHead">企业文化</a>
+
+    </div>
+
+    <div class="am-g">
+        <div class="am-u-sm-8">
+            <span class="firm_introT">我们服务信任我们的人，让他们更加信任</span>
+            <p class="firm_introCon">
+                <!--震亚律师事务所拥有高素质的执业律师团队，经过数年的积累，已成为中国最具有活力的律师事务所之一，形成了稳定并不断扩展的客户群。 　-->
+                震亚律师事务所拥有高素质的执业律师团队，经过数年的积累，深受广大市民群体的信赖，形成了稳定并不断扩展的客户群。
+            </p>
+            <p class="firm_introCon">
+                我们不仅追求公平公正，也追求您的信任。震亚团队为来自美国、以色列、英国、澳大利亚、南非、日本、德国、韩国、比利时、意大利、香港、澳门、台湾等地的客户和律师同行，致力于提供令客户满意的法律服务。 </p>
+        </div>
+        <div class="am-u-sm-4">
+            <img src="img/9.jpg"/>
+        </div>
+    </div>
+</div>
+<!--首页企业文化-->
+
+
+<div class="am-gotop am-gotop-fixed am-active" data-reactid=".0.3" data-am-widget="gotop" icon="arrow-up">
+    <a data-reactid=".0.3.0" href="#top">
+        <span class="am-icon-arrow-up am-gotop-icon" data-reactid=".0.3.0.1" icon="arrow-up"></span>
+    </a>
+</div>
+
+<!--#include file="foot.html"-->
+
+<script>
+    $(document).ready(function () {
+//        var $target = $(".am-slider .am-slides .imgList");
+//        var urlOne = "[href ='/index.php?s=/Article/Content/index/content_id/9.html']";
+//        var urlTwo = "[href ='/index.php?s=/Article/Content/index/content_id/20.html']";
+//        $target.find(urlOne).css({"display": "none", "border": "none"}).parent().hide();
+//        $target.find(urlTwo).css({"display": "none", "border": "none"}).parent().hide();
+
+    });
+</script>
+
+
+
+

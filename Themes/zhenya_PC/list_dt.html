@@ -1,0 +1,64 @@
+<!--#include file="head.html"-->
+<img id="topImg" src="img/2.jpg" class="am-img-responsive" alt=""/>
+<!--律所简介头图-->
+
+<div class="am-g am-g-fixed">
+    <div class="am-u-md-9 am-u-md-push-3">
+        <div class="am-g">
+
+            <ol class="am-breadcrumb">
+                <li><a href="__ROOT__/">首页</a></li>
+                <li class="am-active">实时动态</li>
+            </ol>
+ <!--foreach{$pageList as $vo}-->
+            <div class="actBox">
+            
+                <div class="am-u-sm-11 am-u-sm-centered">
+                    <div class="am-u-sm-4">
+                           <img src="{$vo.image}" width="120" height="120">
+                    </div>
+                    <div class="am-u-sm-8">
+                        <p class="lawsuitT">
+                            <a href="{$vo.aurl}">{$vo.title}</a>
+                        </p>
+                        <div class="actBoxP">
+
+                            <p>
+                               {date('Y-m-d',$vo['time'])}
+                            </p>
+                            <p class="line-clamp">
+                               {$vo.description}
+                            </p>
+
+
+                        </div>
+                        <a class="actBoxMore" href="{$vo.aurl}">查看更多</a>
+                    </div>
+
+                </div>
+            </div>
+
+    <!--{/foreach}-->
+
+        </div>
+    
+    </div>
+
+    <div class="am-u-md-3 am-u-md-pull-9 my-sidebar">
+        <ul class="am-nav">
+            <li class="am-nav-header">实时动态</li>
+            <li>
+            
+            
+            <a href="">更多</a>
+            
+            
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<!--#include file="foot.html"-->
+
+

@@ -1,0 +1,130 @@
+<!--#include file="head.html"-->
+
+
+<style type="text/css">
+    html,body{margin:0;padding:0;}
+    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+</style>
+
+
+
+<img id="topImg" src="img/pageImg/4.jpg" class="am-img-responsive" alt=""/>
+<!--律所简介头图-->
+
+<div class="am-g am-g-fixed">
+    <div class="am-u-md-9 am-u-md-push-3">
+        <div class="am-g">
+            <ol class="am-breadcrumb">
+                <li><a href="__ROOT__/">首页</a></li>
+                <li>联系地址</li>
+                <li class="am-active">上海总部</li>
+            </ol>
+            <div class="am-u-sm-11 am-u-sm-centered">
+                <div id="contact_p" class="am-cf am-article">
+
+                    <p>我们期待着您的回音</p>
+
+                    <p>
+                        咨询热线: <a href="tel:021-51096620" class="am-link-muted">021-5109-6620</a>
+                    </p>
+
+                    <p>总 机：<a href="tel:021-51096620" class="am-link-muted">021-5109-6620</a></p>
+
+                    <p>传 真：021-6252-3999</p>
+
+                    <p>地 址：上海市静安区成都北路333号招商局广场南楼18楼</p>
+
+                    <p>邮 编：200041</p>
+
+                    <p>位 置：上海市静安区成都北路威海路交界处</p>
+
+                    <p>地 铁：地铁13号线、2号线、12号线南京西路8号出口</p>
+
+                    <!--<p>公 交南泉北路商城路站 119路/787路/792路/浦东11路-->
+                        <!--南泉北路世纪大道站 119路/787路/792路/陆家嘴金融城2路/陆家嘴金融城3路-->
+                    <!--</p>-->
+
+                    <div style="width:700px;height:400px;border:#ccc solid 1px;font-size:12px" id="map"></div>
+
+                    <br />
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="am-u-md-3 am-u-md-pull-9 my-sidebar">
+        <ul class="am-nav">
+            <li class="am-nav-header">联系我们</li>
+            <!--list{app="DuxCms" label="categoryList" limit=3 parent_id=5  }-->
+            <li><a  href="{$list.curl}">{$list.name}</a></li>
+
+            <!--{/list}-->
+        </ul>
+    </div>
+
+</div>
+
+
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=2ab9a8e5f4c7f4b99d508d3d0025b954"></script>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap(){
+        map = new BMap.Map("map");
+        map.centerAndZoom(new BMap.Point(121.472776,31.233752),19);
+    }
+    function setMapEvent(){
+        map.enableKeyboard();
+        map.enableDragging();
+        map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target,window){
+        target.addEventListener("click",function(){
+            target.openInfoWindow(window);
+        });
+    }
+    function addMapOverlay(){
+        var markers = [
+            {content:"静安区成都北路333号招商局广场南楼18楼",title:"上海震亚律所",imageOffset: {width:0,height:3},position:{lat:31.234018,lng:121.472793}}
+        ];
+        for(var index = 0; index < markers.length; index++ ){
+            var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+            var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+                imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+            })});
+            var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+            var opts = {
+                width: 200,
+                title: markers[index].title,
+                enableMessage: false
+            };
+            var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+            marker.setLabel(label);
+            addClickHandler(marker,infoWindow);
+            map.addOverlay(marker);
+        };
+    }
+    //向地图添加控件
+    function addMapControl(){
+        var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+        scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+        map.addControl(scaleControl);
+        var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+        map.addControl(navControl);
+        var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:false});
+        map.addControl(overviewControl);
+    }
+    var map;
+    initMap();
+</script>
+
+
+<!--#include file="foot.html"-->

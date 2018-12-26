@@ -1,0 +1,156 @@
+<!--#include file="heading.html"-->
+
+<!--#include file="head.html"-->
+
+
+<div class="am-slider am-slider-default" data-am-flexslider="{playAfterPaused: 8000}">
+    <ul class="am-slides">
+        <li><a href="/Article/Category/index/class_id/38.html"><img src="/Uploads/2016-11-07/581fd9ec9345e.jpg" alt="律师诉讼"/></a></li>
+        <li><img src="images/2.jpg" alt="律师诉讼"/></li>
+        <li><img src="images/banner2.jpg" alt="法律咨询"/></li>
+        <li><img src="images/banner3.jpg"/></li>
+    </ul>
+</div>
+
+<!--诉讼业务导航栏-->
+<div id="mainPageButton">
+    <ul class="nav2 am-avg-sm-3">
+
+        <!--list{app="DuxCms" label="categoryList" limit=6 parent_id=4 order="sequence desc"}-->
+
+        <li><a href="{$list.curl}">{$list.name}</a></li>
+        <!--{/list}-->
+
+
+        <!--<li class="am-dropdown" data-am-dropdown>-->
+            <!--<a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">-->
+                <!--...-->
+                <!--<span class="am-icon-caret-down"></span>-->
+            <!--</a>-->
+
+            <!--<ul class="am-dropdown-content">-->
+
+                <!--&lt;!&ndash;list{app="DuxCms" label="categoryList" limit=2 parent_id=26  order="sequence desc"}&ndash;&gt;-->
+
+                <!--<li>-->
+                    <!--<a href="{$list.curl}" class="C">{$list.name}</a>-->
+                <!--</li>-->
+
+                <!--&lt;!&ndash;{/list}&ndash;&gt;-->
+
+            <!--</ul>-->
+        <!--</li>-->
+
+
+    </ul>
+
+
+</div>
+<!----------------------- 最新动态--------------------------------->
+
+<div class="am-panel am-panel-default">
+    <div class="am-panel-hd">
+        <div class="am-g">
+            <div class="am-u-sm-4 example-act">
+                实时动态
+            </div>
+            <div class="am-u-sm-8">
+                <!--list{app="DuxCms" label="contentList" image="true" limit=1  class_id=15 }-->
+                <a href="{$list.curl}" class="style">更多</a>
+                <!--{/list}-->
+            </div>
+        </div>
+
+    </div>
+    <div class="am-panel-bd">
+        <!--list{app="DuxCms" label="contentList" image="true" class_id=15 limit=3}-->
+        <div class="dt">
+            <div class="dtt">
+                <a class="familyPhone" href="{$list.aurl}">
+                    <img src="{cut_image($list.image,90,70)}"/>
+                </a>
+            </div>
+            <div class="bb">
+                <a class="" href="{$list.aurl}">
+                    {len($list.title,20)}
+                </a><br/>
+                <span class="time am-fr" >{date('Y-m-d',$list['time'])}</span>
+            </div>
+        </div>
+        <div style="border-bottom:1px dashed #CDCDCD;margin-top:10px;margin-bottom:10px"></div>
+        <!--{/list}-->
+    </div>
+</div>
+<!----------------------------------------------------------------------------------------------------------------------->
+<!----------成功案例--------------->
+<img src="images/5.jpg" width="100%"/>
+<div class="am-panel am-panel-default am-bigBox">
+    <div class="am-panel-hd">
+        <div class="am-g">
+            <div class="am-u-sm-4 example-act">
+                成功案例
+            </div>
+            <div class="am-u-sm-8">  <!--list{app="DuxCms" label="contentList" image="true" limit="1" class_id=16}-->
+
+                <a href="{$list.curl}" class="style">更多</a>
+                <!--{/list}--></div>
+        </div>
+
+    </div>
+    <div class="am-panel-bd" style="padding-bottom: 0px;">
+        <!--list{app="DuxCms" label="contentList" image="true" limit="3"  class_id=16}-->
+        <div class="dt1">
+            <div class="dtt11"><a class="familyPhone_2">[<font style="color:#BB202C;">{$list.keywords}</font>]</a></div>
+            <div class="bb1">
+                <a class="news_Span_1" href="{$list.aurl}">{$list.title}</a>
+            </div>
+        </div>
+        <div style="border-bottom:1px dashed #CDCDCD;margin-top:10px;margin-bottom:10px"></div>
+        <!--{/list}-->
+    </div>
+</div>
+
+
+<!----------------------------------------------------------------------------------------------------------------->
+
+
+<div class="about">
+    <div class="am-panel-hd group-Intro">
+        <div class="am-g">
+            <div class="am-u-sm-4 example-act">
+                团队介绍
+            </div>
+            <div class="am-u-sm-8">  <!--list{app="DuxCms" label="contentList" image="true" limit="1" class_id=3}-->
+
+                <a href="{$list.curl}" class="style">更多</a>
+                <!--{/list}--></div>
+        </div>
+
+    </div>
+    <div class="am-g am-container">
+        <div class="am-u-lg-12">
+            <div class="am-slider am-slider-default am-slider-carousel am-slider-b1"
+                    data-am-flexslider="{itemWidth: 100, itemMargin: 5,minItems:3, maxItems:3,slideshow: false}">
+                <ul class="am-slides">
+                    <!--list{app="DuxCms" label="contentList" image="true" class_id=3}-->
+                    <li>
+                        <a href="{$list.aurl}">
+                            <img src="{$list.image}" alt="{$list.title}" class="am-img-responsive" style="height:120px;"/>
+                        </a>
+                    </li>
+                    <!--{/list}-->
+
+                </ul>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<!--#include file="foot.html"-->
+</html>

@@ -1,0 +1,45 @@
+<!--#include file="head.html"-->
+<img id="topImg" src="img/pageImg/6.jpg" class="am-img-responsive" alt=""/>
+<!--律所简介头图-->
+
+<div class="am-g am-g-fixed">
+    <div class="am-u-md-9 am-u-md-push-3">
+        <div class="am-g">
+            <ol class="am-breadcrumb">
+                <li><a href="__ROOT__/">首页</a></li>
+                <li><a href="/index.php?s=/Article/Category/index/class_id/3.html">律师团队</a></li>
+                <li class="am-active">律师简介</li>
+            </ol>
+            <div id="hr_mid" class="am-u-sm-11 am-u-sm-centered">
+                <ul class="am-avg-md-1 am-avg-lg-2 am-thumbnails">
+                    <li>
+                        <img src="{$contentInfo.image}"/>
+                    </li>
+                    <li class="personIntro_li">
+                        <div class="personIntro_li_U">
+                            <p class="personIntro_name">{$contentInfo.lsxm}<span class="personIntro_title">律师</span></p>
+                            <p class="goodAt">擅长处理：</p>
+                            <p class="goodAt_det"> {$contentInfo.gywm} </p>
+
+                            <p>
+                                邮箱：{$contentInfo.yx}
+                            </p>
+                        </div>
+                        <p class="personIntro_memo">职业格言:</p>
+                        <p class="memo_con"> {$contentInfo.zyly} </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="am-u-md-3 am-u-md-pull-9 my-sidebar">
+        <ul class="am-nav">
+            <li class="am-nav-header">律师团队</li>
+            <li><a>{$contentInfo.lsxm}</a></li>
+        </ul>
+    </div>
+
+</div>
+<!--#include file="foot.html"-->

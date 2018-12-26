@@ -1,0 +1,55 @@
+
+<!--#include file="head.html"-->
+<img id="topImg" src="img/pageImg/3.jpg" class="am-img-responsive" alt=""/>
+<!--律所简介头图-->
+
+<div class="am-g am-g-fixed">
+    <div class="am-u-md-9 am-u-md-push-3">
+        <div class="am-g">
+
+            <ol class="am-breadcrumb">
+                <li><a href="__ROOT__/">首页</a></li>
+                <li><a>诉讼业务</a></li>
+                <li class="am-active">{$categoryInfo.name}</li>
+            </ol>
+
+            <article id="event" class="am-article">
+                <div class="am-article-hd">
+                   <div class="am-article-hd">
+                    <h1 class="am-article-title">{$contentInfo.title}</h1>
+                    <span class="am-article-meta">作者：{$contentInfo.zuozhe}</span>
+                    <span class="am-article-meta">来源：{$contentInfo.laizi}</span>
+                    <br/>
+                    <span class="am-article-meta">时间:{date('Y-m-d',$contentInfo['time'])}</span>
+                    <span class="am-article-meta">点击量:{$contentInfo.views}</span>
+                </div>
+
+                </div>
+
+                <div class="am-article-bd">
+                    <p class="am-article-lead">
+                      {$contentInfo.content}
+                    </p>
+
+                </div>
+            </article>
+
+
+        </div>
+    </div>
+
+    <div class="am-u-md-3 am-u-md-pull-9 my-sidebar">
+        <ul class="am-nav">
+            <li class="am-nav-header">诉讼案例</li>
+         <!--list{app="DuxCms" label="contentList" image="true" limit=1 class_id=16 }-->
+            <li><a class="am-active" href="{$list.curl}">更多案例</a></li>
+ <!--{/list}-->
+               
+               
+        </ul>
+    </div>
+
+</div>
+
+
+<!--#include file="foot.html"-->

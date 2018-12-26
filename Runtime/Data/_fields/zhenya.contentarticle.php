@@ -1,0 +1,1 @@
+a:3:{i:0;s:10:"content_id";i:1;s:7:"content";s:5:"_type";a:2:{s:10:"content_id";s:7:"int(10)";s:7:"content";s:10:"mediumtext";}}

@@ -1,0 +1,74 @@
+<!--#include file="head.html"-->
+<img id="topImg" src="img/pageImg/6.jpg" class="am-img-responsive" alt=""/>
+<!--律所简介头图-->
+
+<div class="am-g am-g-fixed">
+    <div class="am-u-md-9 am-u-md-push-3">
+        <div class="am-g">
+            <ol class="am-breadcrumb">
+                <li><a href="__ROOT__/">首页</a></li>
+                <li class="am-active">
+                    <!--<a href="/">-->
+                        广纳英才
+                    <!--</a>-->
+                </li>
+            </ol>
+            <div id="hr_mid" class="am-u-sm-11 am-u-sm-centered">
+                <ul class="am-avg-md-1 am-avg-lg-2 am-thumbnails">
+                    <li>
+                        <img class="recruitImg" src="img/zz.jpg"/>
+                    </li>
+                    <li class="sec_li">
+                        <img class="hr_topImg" src="img/1.png"/>
+                        <p>
+                            <!--为建立和培养高素质律师队伍，确保高质量的法律服务，震亚制定了系统的人才筛选机制和培训计划， 长期以来始终从国内外最著名的法学院校中选拔优秀人才，并为所内律师提供各种专业培训机会。具备广博的知识底蕴、深厚的专业基础、丰富的执业经验和精湛的执业技能是震亚律师事务所对自身律师团队的要求，震亚都更注重提倡团队精神，加强整体优势，强调协作和团结。-->
+                            为建立和培养高素质律师队伍，确保高质量的法律服务，震亚制定了系统的人才筛选机制和培训计划， 长期以来始终从国内外著名的法学院校中选拔优秀人才，并为所内律师提供各种专业培训机会。具备广博的知识底蕴、深厚的专业基础、丰富的执业经验和精湛的执业技能是震亚律师事务所对自身律师团队的要求，震亚都更注重提倡团队精神，加强整体优势，强调协作和团结。
+
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="hr_table" class="am-container">
+            <table class="am-table">
+                <thead>
+                <tr>
+                    <th>招聘职位</th>
+                    <th>工作地点</th>
+                    <th>招聘人数</th>
+                    <th>发布时间</th>
+                    <th>详细情况</th>
+                </tr>
+                </thead>
+                <tbody>
+                 <!--foreach{$pageList as $vo}--> 
+                        <tr>
+                    <tr>
+                        <td>
+                            <a class="chkT" href="{$vo.aurl}">{$vo.zhiwei}</a>
+                        </td>
+                        <td>{$vo.gongzuodidian}</td>
+                        <td>{$vo.zprs}</td>
+                        <td>2016-01-01</td>
+                        <td>
+                            <a class="chkDet" href="{$vo.aurl}">查看详情</a>
+                        </td>
+                    </tr>
+                   <!--{/foreach}-->
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <div class="am-u-md-3 am-u-md-pull-9 my-sidebar">
+        <ul class="am-nav">
+            <li class="am-nav-header">广纳英才</li>
+            <li><a href="">广纳英才</a></li>
+        </ul>
+    </div>
+
+</div>
+
+
+<!--#include file="foot.html"-->

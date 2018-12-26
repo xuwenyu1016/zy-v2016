@@ -1,0 +1,153 @@
+<!--#include file="heading.html"-->
+  <style>
+    .get {
+      background: #1E5B94;
+      color: #fff;
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    .get-title {
+      font-size: 200%;
+      border: 2px solid #fff;
+      padding: 20px;
+      display: inline-block;
+    }
+
+    .get-btn {
+      background: #fff;
+    }
+
+    .detail {
+      background: #fff;
+    }
+
+    .detail-h2 {
+      text-align: center;
+      font-size: 150%;
+      margin: 40px 0;
+    }
+
+  
+    .detail-p {
+      color: #7f8c8d;
+    }
+
+    .detail-mb {
+      margin-bottom: 30px;
+    }
+
+    .hope {
+      background: #0bb59b;
+      padding: 50px 0;
+    }
+
+    .hope-img {
+      text-align: center;
+    }
+
+    .hope-hr {
+      border-color: #149C88;
+    }
+
+    .hope-title {
+      font-size: 140%;
+    }
+
+    .about {
+      background: #fff;
+      padding: 40px 0;
+      color: #7f8c8d;
+    }
+
+    .about-color {
+      color: #34495e;
+    }
+
+    .about-title {
+      font-size: 180%;
+      padding: 30px 0 50px 0;
+      text-align: center;
+    }
+
+    .footer p {
+      color: #7f8c8d;
+      margin: 0;
+      padding: 15px 0;
+      text-align: center;
+      background: #2d3e50;
+    }
+	.detail-h3 {
+    color: black;
+}
+.footer p {
+    color: white;
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+    background: black;
+}
+.am-u-sm-8 {
+    width: 58.66666667%;
+}
+  </style>
+<!--#include file="head.html"-->
+
+
+  
+     <img id="ligitationPic" src="images/pageImg/3.jpg" width="100%">
+
+<div id="mainPageButton">
+     <nav class="nav1">
+   
+       <!--list{app="DuxCms" label="categoryList" limit=5 parent_id=4 order="sequence desc" }-->
+       <li> <a href="{$list.curl}">{$list.name}</a></li>
+       	<!--{/list}-->
+    
+  
+        <li class="am-dropdown" data-am-dropdown>
+      <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+        ... <span class="am-icon-caret-down"></span>
+      </a>
+
+      <ul class="am-dropdown-content">
+        
+      <!--list{app="DuxCms" label="categoryList" limit=2 parent_id=26 order="sequence desc" }-->
+           
+        <li style="width: 42%;"><a href="{$list.curl}" style="width: 125px;">{$list.name}</a></li>
+     
+           <!--{/list}-->
+           
+      </ul>
+    </li>
+
+  
+    </nav>
+    
+
+  </div>
+  <div class="am-panel am-panel-default">
+    
+  <div class="am-panel-bd">
+   
+     <!--foreach{$pageList as $vo}-->
+   <div class="dt">
+      <div class="dtt"><a class="familyPhone" href="{$vo.aurl}">
+                                        <img src="{$vo.image}" alt="{$vo.title}" width="92" height="70">
+                                    </a></div>
+      <div class="bb">
+       <a class=""  href="{$vo.aurl}">
+                                   {$vo.title}
+                                      </a><br/>
+       <time class="time">{date('Y-m-d',$vo['time'])}</time>
+      </div>
+   </div>
+    <div style="border-bottom:1px dashed #CDCDCD;margin-top:10px;margin-bottom:10px"></div>
+<!--{/foreach}-->
+ 
+   
+  </div>
+  </div>
+ <div class="m-page">{$page} </div>
+
+<!--#include file="foot.html"-->

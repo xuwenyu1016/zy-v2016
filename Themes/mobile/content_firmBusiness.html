@@ -1,0 +1,51 @@
+<!--#include file="commonHead.html"-->
+
+<!--#include file="commonFixedTop.html"-->
+
+<div class="am-container am-padding-bottom-sm">
+
+	<div class="am-margin-top-lg am-text-center am-text-lg am-margin-bottom-sm"><b>{$contentInfo.title}</b></div>
+	<!--<div class="am-text-center am-margin-vertical-sm "><span>{date('Y-m-d H:i:s',$contentInfo['time'])}</span></div>-->
+	<div class="am-margin-vertical-sm am-text-sm contentEssays">{$contentInfo.content}</div>
+
+	<ul class="am-avg-sm-1 am-padding-vertical-lg am-text-sm">
+		<li>
+			<div class="am-text-truncate">
+				<span>上一篇：</span>
+				<!--if{empty($prevInfo['aurl'])}-->
+				<a class="am-link-muted ">暂无</a>
+				<!--{else}-->
+				<a href="{$prevInfo.aurl}" class="am-link-muted am-text-truncate">{$prevInfo.title}</a>
+				<!--{/if}-->
+			</div>
+		</li>
+		<li>
+			<div class="am-text-truncate">
+				<span>下一篇：</span>
+				<!--if{empty($nextInfo['aurl'])}-->
+				<a class="am-link-muted">暂无</a>
+				<!--{else}-->
+				<a href="{$nextInfo.aurl}" class="am-link-muted am-text-truncate">{$nextInfo.title}</a>
+				<!--{/if}-->
+			</div>
+		</li>
+	</ul>
+
+
+
+
+</div>
+
+
+<!--#include file="commonContactBox.html"-->
+
+<!--#include file="commonBottom.html"-->
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,117 @@
+<!--#include file="commonHead.html"-->
+
+<!--#include file="commonTop.html"-->
+
+<img src="/Uploads/2017-08-29/17.png" class="am-img-responsive am-center" alt="{$media.title}" title="{$media.title}" />
+
+<section class="introMe am-padding-vertical-xl">
+    <div class="am-container">
+        <article class="titleBox">
+            <h4>Introduction</h4>
+            <h2>律师介绍</h2>
+        </article>
+
+        <hr class="titleBreakLine">
+
+        <ul class="am-avg-sm-2 am-padding-top-lg am-padding-bottom-sm">
+            <li>
+                <article class="innerBox">
+                    <div class="introTitleBox">
+                        <img src="/Uploads/2017-08-29/10.png" class="am-img-responsive" alt="{$media.title}" title="{$media.title}" />
+                        <p class="floatRight">
+                            <span>上海震亚律师事务所主任</span><span>上海震亚律师事务所创办人</span>
+                        </p>
+                    </div>
+
+                    <hr>
+
+                    <p class="subTitle">社会职务</p>
+                    <p class="content">上海市静安区人大代表（2016年-2022年）</p>
+                    <p class="content">民建上海市委律师委员会主任（第一届）</p>
+                    <p class="content">民建上海市委法制委员会委员</p>
+                    <p class="content">上海市律师协会民事委员会委员</p>
+                    <p class="content">上海市律师协会静安工作委员会委员</p>
+                    <p class="content">上海市人力资源和社会保障局兼职政府法律顾问</p>
+                    <p class="content">澳中文化基金会副主席</p>
+                    <p class="content">中澳友好协会副会长</p>
+                    <p class="content">上海法治研究会常务理事</p>
+
+                    <p class="subTitle">个人荣誉</p>
+                    <p class="content">2010年，被评为上海市第十届律师代表</p>
+                    <p class="content">2013年，荣获“优秀律师”称号</p>
+                    <p class="content">2014年，荣获“优秀律师事务所主任”称号</p>
+                    <p class="content">2015年，荣获“优秀律师事务所主任”称号</p>
+                    <p class="content">《和大律师面对面》、《律师讲堂》、《东方大律师》等节目特邀嘉宾</p>
+
+                    <!--<p class="subTitle">擅长业务</p>-->
+                    <!--<p class="content">婚姻纠纷、离婚诉讼、婚姻挽回、婚姻家庭财富管理。</p>-->
+                    <!--<p class="content">专注婚姻领域十余年，经历离婚诉讼千余起。</p>-->
+                    <!--<p class="content">完美解决多起明星、商务精英人士婚姻案件，为客户挽回经济损失上亿元。</p>-->
+                    <!--<p class="content">提倡“好和好散”理念，年成功办理婚姻挽救十余起。</p>-->
+                </article>
+            </li>
+            <li>
+                <img src="/Uploads/2017-08-29/9.png" class="am-img-responsive am-center" alt="{$media.title}" title="{$media.title}" />
+
+                <!--<a class="signUp" href="http://zhouzhiqiang.whoniu.com/list-29.html">了解周律师</a>-->
+            </li>
+        </ul>
+
+        <ul class="am-avg-sm-2 am-padding-bottom-lg am-padding-bottom-sm">
+            <li>
+                <article class="innerBox">
+
+                    <p class="subTitle">擅长业务</p>
+                    <p class="content"><b>政府/企业法律顾问&emsp;</b></p>
+                    <p class="content">2016年，被聘为上海市人力资源和社会保障局兼职政府法律顾问</p>
+                    <p class="content">2017年，被聘为上海市奉贤区人民政府法律顾问</p>
+                    <p class="content">2017年，被聘为武警静安区消防支队法律顾问</p>
+                </article>
+            </li>
+            <li>
+                <article class="innerBox">
+                    <p class="subTitle">&nbsp;</p>
+                    <p class="content"><b>婚姻家庭事务&emsp;</b></p>
+                    <p class="content">擅长婚姻纠纷、离婚诉讼、婚姻挽回、婚姻家庭财富管理。</p>
+                    <p class="content">十余年经历离婚诉讼千余起，解决多起明星、商务精英人士婚姻案件，为客户挽回经济损失上亿元。提倡“好和好散”理念，年成功办理婚姻挽救十余起。</p>
+                </article>
+            </li>
+        </ul>
+
+        <a class="signUp" href="http://zhouzhiqiang.whoniu.com" target="_blank">了解周律师</a>
+    </div>
+</section>
+
+<section class="team am-padding-vertical-xl bgGrey">
+    <div class="am-container">
+        <article class="titleBox bgGrey">
+            <h4>Our Team</h4>
+            <h2>精英团队</h2>
+        </article>
+
+        <hr class="titleBreakLine">
+
+        <ul class="am-avg-sm-3 am-padding-top-lg">
+            <!--foreach{$pageList as $vo}-->
+            <li>
+                <article class="innerBox">
+                    <img src="{$vo.image}" class="am-img-responsive am-center" alt="{$vo.title}" title="{$vo.title}" />
+                    <div class="boxContainer">
+                        <p class="goodAt">擅长业务</p>
+                        <p class="details">{$vo.gywm}</p>
+                    </div>
+                </article>
+                <p class="memberName">{$vo.lsxm} 律师</p>
+            </li>
+            <!--{/foreach}-->
+        </ul>
+
+        <a class="signUp" href="#forSubmit">联系我们</a>
+    </div>
+</section>
+
+<!--#include file="commonContactBox.html"-->
+
+<!--#include file="commonBottom.html"-->
+
+<!--#include file="commonFooter.html"-->

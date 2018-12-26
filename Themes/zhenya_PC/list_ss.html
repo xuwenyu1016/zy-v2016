@@ -1,0 +1,52 @@
+
+<!--#include file="head.html"-->
+<img id="topImg" src="img/pageImg/3.jpg" class="am-img-responsive" alt=""/>
+<!--律所简介头图-->
+
+<div class="am-g am-g-fixed">
+    <div class="am-u-md-9 am-u-md-push-3">
+        <div class="am-g">
+            <ol class="am-breadcrumb">
+                <li><a href="__ROOT__/">首页</a></li>
+                <li class="am-active">{$categoryInfo.name}</li>
+            </ol>
+
+
+  <!--list{app="DuxCms" label="contentList" limit=7 class_id="7,9,11,13,14,10"}-->
+
+            <div class="lawsuitBox">
+                <div class="am-u-sm-11 am-u-sm-centered">
+                    <div class="am-u-sm-4">
+                        <img src="{$list.image}" width="120" height="120">
+                    </div>
+                    <div class="am-u-sm-8">
+                        <p class="lawsuitT">
+
+                            <a href="{$list.aurl}">{$list.title}</a>
+
+                        </p>
+                        <p class="lawsuitP">
+                            <a href="{$list.aurl}">
+                              {$list.description}
+                            </a>
+                        </p>
+                        <a class="lawsuitMore" href="{$list.aurl}">查看更多</a>
+                    </div>
+
+                </div>
+            </div>
+<!--{/list}-->
+
+        </div>
+    </div>
+    <div class="am-u-md-3 am-u-md-pull-9 my-sidebar">
+        <ul class="am-nav">
+         <li class="am-nav-header">诉讼案例</li>
+          <!--list{app="DuxCms" label="categoryList" parent_id="26,4" order="sequence desc" }-->
+            <li ><a href="{$list.curl}"  <!--if{$list['class_id']==$categoryInfo['class_id']}--> class="color"<!--{/if}-->>{$list.name}</a></li>
+          <!--{/list}-->
+        </ul>
+    </div>
+
+</div>
+<!--#include file="foot.html"-->

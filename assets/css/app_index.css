@@ -1,0 +1,863 @@
+/*index*/
+
+/*第一行欢迎来到...*/
+.top-nav {
+    background-color: rgb(245, 245, 245);
+}
+
+/*背景颜色*/
+.top-nav .am-container .left-half {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.top-nav .am-container .welcome {
+    font-size: 16px;
+    color: rgb(3, 3, 3);
+    padding-left: 10px;
+    font-family: "Microsoft Yahei", Sans-Serif;
+}
+
+/*左侧一半*/
+.top-nav .am-container .right-half {
+    text-align: right;
+    font-size: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: rgb(3, 3, 3);
+    font-family: "Microsoft Yahei", Sans-Serif;
+}
+
+.top-nav .am-container .right-half .careUs {
+    color: rgb(3, 3, 3);
+}
+
+.top-nav .am-container .right-half .collect {
+    padding-right: 3px;
+    color: rgb(3, 3, 3);
+}
+
+/*右侧一半*/
+
+/*第二行两个logo*/
+.sec-logo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sec-logo .am-container .lft-logo{padding-left: 8px;}
+.sec-logo .am-container .rit-logo {
+    text-align: right;
+    float: right;margin-top: 0px;
+}
+
+/*导航*/
+.navigation {
+    background-color: rgb(245, 245, 245);
+}
+
+.navigation .am-container .am-g {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.navigation .am-container .am-g div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navigation .am-container .am-g div a {
+    line-height: 30px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    display: block;
+}
+
+
+
+/*导航active页面字和下划线标红*/
+
+/*首页头图*/
+.top-banner {
+    background: url(./../img/24.jpg) no-repeat;
+    height: 590px;
+    width: 100%;
+    background-size: cover;
+}
+
+/*.top-banner .am-container{position: relative;}*/
+.top-banner .am-container .title {
+    text-align: center;
+    font-size: 55px;
+    font-family: "Microsoft Yahei", Sans-Serif;
+    color: white;
+    padding-top: 17%;
+    letter-spacing: 25px;
+}
+
+.top-banner .am-container .title:hover{cursor: default;}
+
+/*首页头图第一行字*/
+.top-banner .am-container .detail {
+    text-align: center;
+    font-size: 20px;
+    font-family: "Microsoft Yahei", Sans-Serif;
+    color: white;
+    padding-top: 0%;
+    letter-spacing: 8px;
+}
+
+.top-banner .am-container .detail:hover{cursor: default;}
+
+/*首页头图第二行字*/
+.top-banner .am-container .consult-bs {
+    padding-top: 5%;
+    text-align: center;
+}
+
+.top-banner .am-container .consult-bs .consult {
+    display: inline-block;
+    width: 170px;
+    line-height: 40px;
+    font-size: 20px;
+    font-family: "Microsoft Yahei", Sans-Serif;
+    margin: 0 20px 0 auto;
+    border-radius: 25px;
+    background-color: rgb(221, 0, 9);
+    color: white;
+}
+
+.top-banner .am-container .consult-bs .consult:hover {
+    background-color: rgb(178, 0, 7);
+    color: whitesmoke;
+}
+
+.top-banner .am-container .consult-bs .message {
+    display: inline-block;
+    width: 170px;
+    line-height: 40px;
+    font-size: 20px;
+    border: 2px solid white;
+    font-family: "Microsoft Yahei", Sans-Serif;
+    margin: 0 20px 0 auto;
+    border-radius: 25px;
+    background-color: rgb(56, 56, 56);
+    color: white;
+}
+
+.top-banner .am-container .consult-bs .message:hover {
+    background-color: rgb(39, 39, 39);
+    color: whitesmoke;
+}
+
+/*首页头图第三行按钮*/
+
+/*震亚业务*/
+.business-module {
+    background-color: rgb(248, 248, 248);
+    padding-top: 45px;
+    padding-bottom: 70px;
+}
+
+.business-module .am-container > .title {
+    width: 25%;
+    margin: 0 auto;
+    border-bottom: 2px solid rgb(3, 3, 3);
+    padding-bottom: 10px;
+}
+
+.business-module .am-container > .title:hover{cursor: default;}
+
+.business-module .am-container > .title .chn {
+    font-size: 30px;
+    color: rgb(3, 3, 3);
+    text-align: center;
+    display: block;
+    font-family: "Microsoft Yahei", Sans-Serif;
+}
+
+.business-module .am-container > .title .en {
+    font-size: 21px;
+    color: rgb(3, 3, 3);
+    text-align: center;
+    display: block;
+    font-family: "Segoe UI", Sans-Serif;
+    line-height: 25px;
+}
+
+/*标题*/
+
+.business-module .am-container .b-list {
+    padding-top: 35px;
+    font-family: "Microsoft Yahei", Sans-Serif;
+}
+
+.business-module .am-container .b-list .center {
+    display: block;
+    margin: 0 auto;
+}
+
+/*图片居中*/
+.business-module .am-container .b-list .img-1 {
+    position: relative;
+}
+
+.business-module .am-container .b-list .img-1 .square-1 {
+    width: 206px;
+    border-bottom: 0px solid white;
+    border-top: 68px solid transparent;
+    border-right: 203px solid white;
+    position: absolute;
+    top: 110px;
+    left: 40px;
+    box-shadow: 3px 3px 2px #a7a7a7;
+}
+
+.business-module .am-container .b-list .img-1 .square-1 .title-box {
+    width: 200px;
+    color: rgb(3, 3, 3);
+}
+
+.business-module .am-container .b-list .img-1 .square-1 .title-box:hover{cursor: default;}
+
+.business-module .am-container .b-list .img-1 .square-1 .title-box .d-title {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.business-module .am-container .b-list .img-1 .square-1 .title-box .d-content {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    font-size: 13px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.business-module .am-container .b-list .img-1 .square-1:hover {
+    border-bottom: 0px solid rgb(222, 48, 47);
+    border-top: 68px solid transparent;
+    border-right: 203px solid rgb(222, 48, 47);
+}
+
+.business-module .am-container .b-list .img-1 .square-1:hover .title-box {
+    color: white;
+}
+
+/*第一个盒子*/
+.business-module .am-container .b-list .img-2 {
+    position: relative;
+}
+
+.business-module .am-container .b-list .img-2 .square-2 {
+    width: 206px;
+    border-bottom: 0px solid white;
+    border-top: 68px solid transparent;
+    border-right: 203px solid white;
+    position: absolute;
+    top: 110px;
+    left: 40px;
+    box-shadow: 3px 3px 2px #a7a7a7;
+}
+
+.business-module .am-container .b-list .img-2 .square-2 .title-box {
+    width: 200px;
+    color: rgb(3, 3, 3);
+}
+
+.business-module .am-container .b-list .img-2 .square-2 .title-box .d-title {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.business-module .am-container .b-list .img-2 .square-2 .title-box .d-content {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    font-size: 13px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.business-module .am-container .b-list .img-2 .square-2:hover {
+    border-bottom: 0px solid rgb(222, 48, 47);
+    border-top: 68px solid transparent;
+    border-right: 203px solid rgb(222, 48, 47);
+}
+
+.business-module .am-container .b-list .img-2 .square-2:hover .title-box {
+    color: white;
+}
+
+/*第二个盒子*/
+.business-module .am-container .b-list .img-3 {
+    position: relative;
+}
+
+.business-module .am-container .b-list .img-3 .square-3 {
+    width: 206px;
+    border-bottom: 0px solid white;
+    border-top: 68px solid transparent;
+    border-right: 203px solid white;
+    position: absolute;
+    top: 110px;
+    left: 40px;
+    box-shadow: 3px 3px 2px #a7a7a7;
+}
+
+.business-module .am-container .b-list .img-3 .square-3 .title-box {
+    width: 200px;
+    color: rgb(3, 3, 3);
+}
+
+.business-module .am-container .b-list .img-3 .square-3 .title-box .d-title {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.business-module .am-container .b-list .img-3 .square-3 .title-box .d-content {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    font-size: 13px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.business-module .am-container .b-list .img-3 .square-3:hover {
+    border-bottom: 0px solid rgb(222, 48, 47);
+    border-top: 68px solid transparent;
+    border-right: 203px solid rgb(222, 48, 47);
+}
+
+.business-module .am-container .b-list .img-3 .square-3:hover .title-box {
+    color: white;
+}
+
+/*第三个盒子*/
+.business-module .am-container .b-list .img-4 {
+    position: relative;
+}
+
+.business-module .am-container .b-list .img-4 .square-4 {
+    width: 206px;
+    border-bottom: 0px solid white;
+    border-top: 68px solid transparent;
+    border-right: 203px solid white;
+    position: absolute;
+    top: 110px;
+    left: 40px;
+    box-shadow: 3px 3px 2px #a7a7a7;
+}
+
+.business-module .am-container .b-list .img-4 .square-4 .title-box {
+    width: 200px;
+    color: rgb(3, 3, 3);
+}
+
+.business-module .am-container .b-list .img-4 .square-4 .title-box .d-title {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.business-module .am-container .b-list .img-4 .square-4 .title-box .d-content {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    font-size: 13px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.business-module .am-container .b-list .img-4 .square-4:hover {
+    border-bottom: 0px solid rgb(222, 48, 47);
+    border-top: 68px solid transparent;
+    border-right: 203px solid rgb(222, 48, 47);
+}
+
+.business-module .am-container .b-list .img-4 .square-4:hover .title-box {
+    color: white;
+}
+
+/*第四个盒子*/
+
+/*值得信赖表单板块*/
+.submit-form {
+    background: url(./../img/30.jpg) no-repeat;
+    width: 100%;
+    height: 528px;
+    background-size: cover;
+}
+
+.submit-form .am-container {
+    position: relative;
+}
+
+.submit-form .am-container .title {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    display: block;
+    font-family: "Microsoft Yahei", Sans-Serif;
+    padding-top: 70px;margin-bottom: 5px;
+}
+
+.submit-form .am-container .title:hover{cursor: default;}
+
+.submit-form .am-container .sub-title {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    display: block;
+    font-family: "Microsoft Yahei", Sans-Serif;
+    line-height: 25px;
+    margin-top:0;
+}
+
+.submit-form .am-container .sub-title:hover{cursor: default;}
+
+.submit-form .am-container .am-form {
+    padding-top: 30px;
+}
+
+.submit-form .am-container .am-form .am-form-group {
+    height: 100px;
+    margin-bottom: 0;
+}
+
+.submit-form .am-container .am-form label {
+    color: white;
+    font-family: "Microsoft Yahei", Sans-Serif;
+    font-size: 16px;
+}
+
+.submit-form .am-container .am-form input {
+    border-radius: 5px;
+    width: 80%;
+}
+
+.submit-form .am-container .am-form fieldset {
+    position: relative;
+}
+
+.submit-form .am-container .am-form .button-p {
+    position: absolute;
+    bottom: -27%;
+    left: 39%;
+}
+
+.submit-form .am-container .am-form .button-p .button-submit {
+    margin: 0 auto;
+    display: block;
+    width: 200px;
+    color: white;
+    letter-spacing: 10px;
+    background-color: rgb(222, 48, 47);
+    border-radius: 5px;
+    border: rgb(222, 48, 47);
+}
+
+.submit-form .am-container .am-form .button-p .button-submit:hover {
+    background-color: rgb(168, 36, 35);
+}
+
+/*关于震亚*/
+.about-cor {
+    background-color: rgb(248, 248, 248);
+    padding-top: 35px;
+}
+
+.about-cor .title {
+    width: 25%;
+    margin: 0 auto;
+    border-bottom: 2px solid rgb(3, 3, 3);
+    padding-bottom: 10px;
+}
+
+.about-cor .title:hover{cursor: default;}
+
+.about-cor .title .chn {
+    font-size: 30px;
+    color: rgb(3, 3, 3);
+    text-align: center;
+    display: block;
+    font-family: "Microsoft Yahei", Sans-Serif;
+}
+
+.about-cor .title .en {
+    font-size: 21px;
+    color: rgb(3, 3, 3);
+    text-align: center;
+    display: block;
+    font-family: "Segoe UI", Sans-Serif;
+    line-height: 25px;
+}
+
+.about-cor .am-g .am-img-responsive {
+    margin: -30px auto 0 auto;
+}
+
+/*人物图片*/
+.about-cor .am-g .about-cor-rit {
+    padding-left: 0;
+    padding-top: 30px;
+}
+
+.about-cor .am-g .about-cor-rit .cor-inro {
+    text-indent: 32px;
+    font-size: 16px;
+    font-family: "Microsoft Yahei", Sans-Serif;
+    padding-left: 35px;
+    padding-right: 30px;
+    line-height: 30px;
+    padding-top: 50px;
+}
+
+/*右侧文字*/
+
+.news {
+    background-color: rgb(220, 220, 220);
+    padding-top: 35px;
+}
+
+.news .title {
+    width: 25%;
+    margin: 0 auto;
+    border-bottom: 2px solid rgb(3, 3, 3);
+    padding-bottom: 10px;
+}
+
+.news .title .chn {
+    font-size: 30px;
+    color: rgb(3, 3, 3);
+    text-align: center;
+    display: block;
+    font-family: "Microsoft Yahei", Sans-Serif;
+}
+
+.news .title .en {
+    font-size: 21px;
+    color: rgb(3, 3, 3);
+    text-align: center;
+    display: block;
+    font-family: "Segoe UI", Sans-Serif;
+    line-height: 25px;
+}
+
+.news .title-box {
+    position: relative;
+}
+
+.news .title-box:hover{cursor: default;}
+
+.news .am-container .morePlus {
+    position: absolute;
+    right: 3px;
+    top: 30px;
+}
+
+.news .am-container .morePlus:hover{text-decoration: underline;}
+
+.news .am-container .morePlus .plus {
+    color: rgb(223, 48, 45);
+}
+
+.news .am-container .morePlus .more {
+    color: rgb(69, 67, 68);
+    padding-right: 3px;
+}
+
+.news .am-container .am-g {
+    padding-top: 45px;
+    padding-bottom: 30px;
+}
+
+.news .am-container .am-g .info-box {
+    background-color: white;
+}
+
+.news .am-container .am-g .info-box .image-info {
+    display: block;
+}
+
+.news .am-container .am-g .subject {
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "Microsoft Yahei", Sans-Serif;
+    color: rgb(3, 3, 3);
+    padding-left: 10px;
+    width: 80%;
+}
+
+.news .am-container .am-g .content {
+    font-size: 14px;
+    display: block;
+    margin-top: 2px;
+    margin-bottom: 0;
+    font-family: "Microsoft Yahei", Sans-Serif;
+    color: rgb(3, 3, 3);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+.news .am-container .am-g .check-more {
+    display: block;
+    text-align: right;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-family: "Microsoft Yahei", Sans-Serif;
+    color: rgb(225, 47, 47);
+}
+
+.lawyers {
+    background-color: rgb(248, 248, 248);
+    padding-top: 35px;
+}
+
+.lawyers .title {
+    width: 25%;
+    margin: 0 auto;
+    border-bottom: 2px solid rgb(3, 3, 3);
+    padding-bottom: 10px;
+}
+
+.lawyers .title .chn {
+    font-size: 30px;
+    color: rgb(3, 3, 3);
+    text-align: center;
+    display: block;
+    font-family: "Microsoft Yahei", Sans-Serif;
+}
+
+.lawyers .title .en {
+    font-size: 21px;
+    color: rgb(3, 3, 3);
+    text-align: center;
+    display: block;
+    font-family: "Segoe UI", Sans-Serif;
+    line-height: 25px;
+}
+
+.lawyers .title-box {
+    position: relative;
+}
+
+.lawyers .title-box:hover {
+    cursor: default;
+}
+
+.lawyers .am-container .morePlus {
+    position: absolute;
+    right: 3px;
+    top: 30px;
+}
+
+.lawyers .am-container .morePlus:hover{text-decoration: underline;}
+
+.lawyers .am-container .morePlus .plus {
+    color: rgb(223, 48, 45);
+}
+
+.lawyers .am-container .morePlus .more {
+    color: rgb(69, 67, 68);
+    padding-right: 3px;
+}
+
+.lawyers .am-container .profiles {
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.lawyers .am-container .profiles .file-img {
+    padding-right: 0;height: 350px; background-color: rgb(61, 64, 69);
+}
+
+.lawyers .am-container .profiles .file-img img {
+    width: 100%;padding-top: 15px;
+}
+
+.lawyers .am-container .profiles .profile-debrief {
+    background-color: rgb(61, 64, 69);
+    height: 350px;
+    position: relative;
+}
+
+.lawyers .am-container .profiles .profile-debrief > p {
+    padding-top: 70px;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.lawyers .am-container .profiles .profile-debrief p .name {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.lawyers .am-container .profiles .profile-debrief p .details {
+    display: block;
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+.lawyers .am-container .profiles .profile-debrief .triangle-bottomright {
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid rgb(222, 48, 47);
+    border-left: 50px solid transparent;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.lawyers .am-container .profiles .lawyer-pic {
+    background-color: rgba(23, 23, 23, .5);
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: -32px;
+    position: relative;
+    z-index: 2;
+}
+
+.lawyers .am-container .profiles .four-img-l:hover{opacity: .8;cursor: pointer;}
+.lawyers .am-container .profiles .four-img-r:hover{opacity: .8;cursor: pointer;}
+
+.lawyers .am-container .profiles .lawyer-pic .lawyer-name {
+    color: white;
+    padding-right: 5px;
+    font-family: "Microsoft Yahei", Sans-Serif;
+    font-size: 20px;
+}
+
+.lawyers .am-container .profiles .lawyer-pic .lawyer-title {
+    color: white;
+    padding-right: 5px;
+    font-family: "Microsoft Yahei", Sans-Serif;
+    font-size: 16px;
+}
+
+.lawyers .am-container .profiles .four-img-l {
+    padding-right: 0;
+}
+
+.lawyers .am-container .profiles .four-img-r {
+    padding-left: 0;
+}
+
+
+.lawyers .am-container .person-2, .person-3, .person-4 {
+    display: none;
+}
+
+.lawyers .am-container .nav-block {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.lawyers .am-container .nav-block span {
+    display: inline-block;
+    width: 10%;
+    background-color: rgb(201, 201, 201);
+    height: 5px;
+    margin: 0 auto;
+}
+
+.lawyers .am-container .nav-block .red-1 {
+    background-color: rgb(222, 48, 47);
+}
+
+.lawyers .am-container .file-block-2, .file-block-3 {
+    display: none;
+}
+
+.footer-nav {
+    background-color: rgb(47, 47, 47);
+}
+
+.footer-nav .am-container .outer-eight {
+    padding-top: 40px;
+}
+
+.footer-nav .am-container .outer-eight .inner-5 div {
+    width: 20%;
+}
+
+.footer-nav .am-container .outer-eight .inner-5 div .col .title {
+    font-family: "Microsoft Yahei", Sans-Serif;
+    color: white;
+    font-size: 16px;
+    display: block;
+    line-height: 35px;
+}
+
+.footer-nav .am-container .outer-eight .inner-5 div .col .content {
+    font-family: "Microsoft Yahei", Sans-Serif;
+    color: rgb(101, 99, 100);
+    font-size: 16px;
+    display: block;
+    line-height: 40px;
+}
+
+.footer-nav .am-container .outer-eight .inner-5 div .col .content:hover {
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+.footer-nav .am-container .outer-eight .qcode {
+    display: block;
+    margin: 0 auto;
+    padding-top: 35px;
+}
+
+.footer-nav .am-container .outer-eight .wechat {
+    font-family: "Microsoft Yahei", Sans-Serif;
+    color: rgb(101, 99, 100);
+    font-size: 16px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.footer-bottom {
+    background-color: rgb(255, 255, 255);
+}
+
+.footer-bottom p {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.footer-bottom p span {
+    color: rgb(170, 170, 170);
+    font-family: "Microsoft Yahei", Sans-Serif;
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+.footer-bottom p a {
+    color: rgb(170, 170, 170);
+    font-family: "Microsoft Yahei", Sans-Serif;
+    font-size: 16px;
+    padding-right: 10px;
+}
+

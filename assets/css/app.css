@@ -1,0 +1,783 @@
+/* Write your styles */
+.am-topbar-fixed-top {
+    top: 0;
+}
+
+body {
+    font-family: "Microsoft YaHei"
+}
+
+.am-topbar-fixed-bottom, .am-topbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.am-topbar {
+    position: relative;
+    min-height: 50px;
+    background: black;
+    border-width: 0 0 1px;
+    border-style: solid;
+    border-color: #ddd;
+}
+
+.am-list, .am-topbar {
+    margin-bottom: 1.6rem;
+}
+
+.am-topbar, .am-topbar a {
+    color: #666;
+}
+
+article, aside, details, figcaption, figure, footer, header, hr, main, menu, nav, section, summary {
+    display: block;
+}
+
+.am-with-topbar-fixed-top {
+    margin-top: 0px;
+
+    padding-top: 0px;
+
+}
+
+.am-topbar, .am-topbar a {
+    color: white;
+}
+
+.am-list, .am-topbar {
+    margin-bottom: 0rem;
+}
+
+.am-nav > li.am-active > a, .am-nav > li.am-active > a:focus, .am-nav > li.am-active > a:hover {
+    color: #fff;
+    background-color: #DD0009;
+    cursor: default;
+}
+
+a {
+    color: black;
+}
+
+.detail-h3 {
+    color: black;
+}
+
+#mainPageButton {
+    margin: 0 auto;
+    text-align: center;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+#mainPageButton #ButtonDanger {
+    display: inline-block;
+    font-size: 14px;
+    padding: 0.6em 1.25em;
+}
+
+.am-badge-danger {
+    background-color: rgb(221, 0, 9);
+}
+
+.am-badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: .25em .625em;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1;
+    vertical-align: baseline;
+    white-space: nowrap;
+    background-color: #999;
+}
+
+.detail-mb {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.am-u-sm-8 {
+    width: 63.66666667%;
+}
+
+.familyPhone_1 {
+    width: 130%;
+    font-size: 1.5rem;
+    display: block;
+    color: black;
+    word-wrap: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.news_Span_1 {
+    width: 100%;
+    display: block;
+    word-wrap: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: black;
+
+}
+
+.img {
+    width: 100%;
+}
+
+.footer p {
+    color: white;
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+    background: black;
+}
+
+.style {
+    float: right;
+    margin-right: 11px;
+    color: #9D171C;
+    font-size: 10px;
+    margin-top: 4px;
+}
+
+.am {
+    background: #DD0009;
+
+}
+
+.about {
+    background: #fff;
+    padding: 40px 20px;
+    color: #7f8c8d;
+}
+
+.am-thumbnails {
+    margin-left: -.4rem;
+    margin-right: 3rem;
+}
+
+.m-page {
+    margin-left: 25%;
+    clear: both;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.m-page a {
+    float: left;
+    background: #777;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    display: block;
+    margin-right: 4px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.m-page span {
+    float: left;
+    width: 37px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    display: block;
+    margin-right: 4px;
+    color: #777;
+}
+
+.m-page a:hover {
+    background: #cd1a1c;
+}
+
+.m-page a.prePage, .m-page a.nextPage {
+    font-family: "Tahoma";
+}
+
+.m-page .hidden {
+    display: none;
+}
+
+.am-u-sm-6 {
+    width: 100%;
+}
+
+.line-clamp {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.abou {
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.am-article-title {
+    font-size: 2.2rem;
+    line-height: 1.15;
+    font-weight: 400;
+    font-family: "黑体";
+    margin-bottom: 5px;
+
+}
+
+.xc {
+    /* position: relative; */
+    line-height: 1.4em;
+    height: 2.9em;
+    overflow: hidden;
+
+}
+
+.am-g .am-g {
+    margin-left: -1rem;
+    margin-right: 2rem;
+    width: auto;
+}
+
+/*.am-dropdown {*/
+    /*position: relative;*/
+    /*display: inline-block;*/
+    /*margin-left: 62%;*/
+/*}*/
+
+.am-topbar {
+    background: #827A7A;
+
+}
+
+.am-topbar a {
+    color: white;
+    font-size: 20px;
+    font-family: 黑体;
+}
+
+.nav1 {
+
+    width: 100%;
+    height: 100px;
+    background: white;
+}
+
+.nav1 li {
+    float: left;
+    width: 25%;
+    padding: 0.375rem 0;
+    font-size: 1.95rem;
+    color: white;
+    text-align: center;
+
+    margin-left: 20px;
+    list-style-type: none;
+}
+
+.nav3 {
+    /*height: 90px;*/
+    background: #9E0B1B;
+}
+
+.nav3 li {
+    padding: .5rem 0;
+    /*font-size: 1.95rem;*/
+    color: white;
+    text-align: center;
+    /*margin-left: 20px;*/
+}
+
+.nav3 li a {
+    color: white;
+}
+
+.kuan {
+    width: 100%;
+    background: #9E0B1B;
+
+}
+
+.am-topbar-brand {
+    margin: 0 auto;
+    padding: 0 10px;
+    font-size: 1.8rem;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    text-align: center;
+    float: none;
+}
+
+.dt div {
+    float: left;
+}
+
+.nav1 li a {
+    font-size: 17px;
+}
+
+.am-u-sm-4 {
+    width: 35.33333333%;
+}
+
+.dt {
+    border: 1px solid white;
+    height: 80px;
+    margin-left: 10px;
+}
+
+.time {
+    font-size: 10px;
+
+}
+
+.dt1 {
+    border: 1px solid white;
+    height: 30px;
+    margin-left: 10px;
+
+}
+
+.dt1 div {
+    float: left;
+}
+
+.am-panel {
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.am-topbar {
+    background: #827A7A;
+    border-bottom: #827A7A;
+}
+
+.nav2 {
+    width: 100%;
+    /*height: 100px;*/
+    /*background: white;*/
+}
+
+.nav2 li {
+    /*float: left;*/
+    /*width: 25%;*/
+    padding: 0.5rem 0;
+    /*font-size: 1.95rem;*/
+    /*color: white;*/
+    text-align: center;
+    /*margin-left: 20px;*/
+    /*list-style-type: none;*/
+}
+
+.nav2 li a {
+    /*font-size: 17px;*/
+}
+
+.am-thumbnail {
+    border: none;
+}
+
+.am-article-hd {
+    text-align: center;
+}
+
+.am-control-paging {
+    display: none;
+}
+
+
+
+.bb {
+    border: 1px solid white;
+    width: 66%;
+    height: 72px;
+
+    padding-left: 10px;
+}
+
+.bb a {
+    font-size: 14px;
+
+}
+
+/*index*/
+
+
+.get {
+    background: #1E5B94;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.get-title {
+    font-size: 200%;
+    border: 2px solid #fff;
+    padding: 20px;
+    display: inline-block;
+}
+
+.get-btn {
+    background: #fff;
+}
+
+.detail {
+    background: #fff;
+}
+
+.detail-h2 {
+    text-align: center;
+    font-size: 150%;
+    margin: 40px 0;
+}
+
+.detail-p {
+    color: #7f8c8d;
+}
+
+.detail-mb {
+    margin-bottom: 30px;
+}
+
+.hope {
+    background: #0bb59b;
+    padding: 50px 0;
+}
+
+.hope-img {
+    text-align: center;
+}
+
+.hope-hr {
+    border-color: #149C88;
+}
+
+.hope-title {
+    font-size: 140%;
+}
+
+.about {
+    background: #fff;
+    padding: 20px 0;
+    color: #7f8c8d;
+}
+
+.about-color {
+    color: #34495e;
+}
+
+.about-title {
+    font-size: 180%;
+    padding: 30px 0 50px 0;
+    text-align: center;
+}
+
+.footer p {
+    color: #7f8c8d;
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+    background: #2d3e50;
+}
+
+.detail-h3 {
+    color: black;
+}
+
+.footer p {
+    color: white;
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+    background: black;
+}
+
+.familyPhone_2 {
+    width: 100%;
+    font-weight: bold;
+    display: block;
+    color: black;
+    word-wrap: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+.cgal {
+    margin-left: 14px;
+}
+
+.example-act {
+    border-left: 5px solid #9E0B1B;
+}
+
+.am-bigBox {
+    margin-bottom: 0px;
+}
+
+.group-Intro {
+    color: #444;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+    margin-bottom: 20px;
+}
+
+/*.C {*/
+    /*width: 125px;*/
+/*}*/
+.nav2 li .am-dropdown-content{
+    right: 10px;
+    min-width: 120px;
+}
+
+.bb1 {
+    border: 1px solid white;
+    width: 66%;
+    height: 30px;
+
+    padding-left: 10px;
+}
+
+
+/*--律师团队------*/
+.get {
+    background: #1E5B94;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.get-title {
+    font-size: 200%;
+    border: 2px solid #fff;
+    padding: 20px;
+    display: inline-block;
+}
+
+.get-btn {
+    background: #fff;
+}
+
+.detail {
+    background: #fff;
+}
+
+.detail-h2 {
+    text-align: center;
+    font-size: 150%;
+    margin: 40px 0;
+}
+
+.detail-p {
+    color: #7f8c8d;
+}
+
+.detail-mb {
+    margin-bottom: 30px;
+}
+
+.hope {
+    background: #0bb59b;
+    padding: 50px 0;
+}
+
+.hope-img {
+    text-align: center;
+}
+
+.hope-hr {
+    border-color: #149C88;
+}
+
+.hope-title {
+    font-size: 140%;
+}
+
+.about {
+    background: #fff;
+    padding: 40px 0;
+    color: #7f8c8d;
+}
+
+.about-color {
+    color: #34495e;
+}
+
+.about-title {
+    font-size: 180%;
+    padding: 30px 0 50px 0;
+    text-align: center;
+}
+
+.footer p {
+    color: #7f8c8d;
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+    background: #2d3e50;
+}
+
+.detail-h3 {
+    color: black;
+}
+
+.footer p {
+    color: white;
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+    background: black;
+}
+
+.abou {
+    background: #fff;
+    padding: 40px 0px;
+    margin: 0px 0px 1.6rem;
+    text-indent: 2em;
+    color: #333333;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: left;
+    -webkit-text-stroke-width: 0px;
+}
+
+.na {
+
+    margin-left: 10px;
+
+}
+
+.li-cge {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+/*--广纳英才---------------*/
+.get {
+    background: #1E5B94;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.get-title {
+    font-size: 200%;
+    border: 2px solid #fff;
+    padding: 20px;
+    display: inline-block;
+}
+
+.get-btn {
+    background: #fff;
+}
+
+.detail {
+    background: #fff;
+}
+
+.detail-h2 {
+    text-align: center;
+    font-size: 150%;
+    margin: 40px 0;
+}
+
+.detail-p {
+    color: #7f8c8d;
+}
+
+.detail-mb {
+    margin-bottom: 30px;
+}
+
+.hope {
+    background: #0bb59b;
+    padding: 50px 0;
+}
+
+.hope-img {
+    text-align: center;
+}
+
+.hope-hr {
+    border-color: #149C88;
+}
+
+.hope-title {
+    font-size: 140%;
+}
+
+.about {
+    background: #fff;
+    padding: 40px 0;
+    color: #7f8c8d;
+}
+
+.about-color {
+    color: #34495e;
+}
+
+.about-title {
+    font-size: 180%;
+    padding: 30px 0 50px 0;
+    text-align: center;
+}
+
+.footer p {
+    color: #7f8c8d;
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+    background: #2d3e50;
+}
+
+.detail-h3 {
+    color: black;
+}
+
+.footer p {
+    color: white;
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+    background: black;
+}
+
+.am-table {
+    margin-top: 80px;
+
+    margin-bottom: 250px;
+}
+
+.nav li {
+    float: left;
+    width: 70px;
+    padding: 0.375rem 0;
+    font-size: 1.75rem;
+    color: white;
+    text-align: center;
+    font-family: 黑体;
+    margin-left: 7%;
+    list-style-type: none;
+}
+
+.am-u-sm-6 {
+    width: 50%;
+}

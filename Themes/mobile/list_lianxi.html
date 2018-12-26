@@ -1,0 +1,237 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="律所地址,法律咨询热线,法律在线咨询"/>
+    <meta name="description" content="欢迎来到震亚诉讼网。上海律所地址、上海法律咨询热线、上海法律在线咨询。北京律所地址、上海法律咨询热线、上海法律在线咨询。"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <title>上海震亚-震亚律师事务所联系方式</title>
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+    <link rel="icon" type="image/png" href="assets/i/favicon.png">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/amazeui.min.js"></script>
+    <style type="text/css">
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .iw_poi_title {
+            color: #CC5522;
+            font-size: 14px;
+            font-weight: bold;
+            overflow: hidden;
+            padding-right: 13px;
+            white-space: nowrap
+        }
+
+        .iw_poi_content {
+            font: 12px arial, sans-serif;
+            overflow: visible;
+            padding-top: 4px;
+            white-space: -moz-pre-wrap;
+            word-wrap: break-word
+        }
+
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+
+
+</head>
+<!--#include file="head.html"-->
+
+
+<div class="am-slider am-slider-default" data-am-flexslider="{playAfterPaused: 8000}">
+    <ul class="am-slides">
+        <li><img id="ligitationPic" src="images/pageImg/4.jpg" alt="上海震亚律师事务所" width="100%"></li>
+
+    </ul>
+</div>
+
+<div id="mainPageButton">
+
+    <a id="ButtonDanger" class="am-badge am-badge-danger" href="index.php?s=/Article/Category/index/class_id/18.html"
+       style="background:#9E0B1B">上海总部</a>
+    <!--<a id="ButtonDanger" class="am-badge am-badge-danger" href="index.php?s=/Article/Category/index/class_id/23.html">-->
+        <!--北京总部-->
+    <!--</a>-->
+</div>
+
+<div class="abou">
+    <div id="contactUs">
+
+        <div class="contact_box" style="width: 90%;margin:10px auto;">
+            <div class="contact_info">
+                <strong>我们期待着您的回音</strong><br/>
+                <br/>
+
+
+                咨询热线：021-5109-6620
+                <br/>
+
+                总　机：021—5109-6620
+                <br/>
+                传　真：021-6252-3999<br/>
+                地　址：上海市静安区成都北路333号招商局广场南楼18楼<br/>
+                邮　编：200041<br/>
+                位　置：上海市静安区成都北路威海路交界处<br/>
+                地　铁：地铁9号线商城路2号出口<br/>
+                公 交：<br/>
+                地铁13号线、2号线、12号线南京西路8号出口
+                <!--<br/>-->
+                <!--南泉北路世纪大道站 119路/787路/792路/陆家嘴金融城2路/陆家嘴金融城3路-->
+
+                <p style="margin: 10px; margin-left: -40px;">
+
+
+                    <!--百度地图容器-->
+                <div style="width:100%px;height:300px;border:#ccc solid 1px;" id="dituContent"></div>
+
+
+                </p>
+            </div>
+        </div>
+
+        <!--联系我们-浦东右侧板块-->
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap() {
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+
+    //创建地图函数：
+    function createMap() {
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(121.525282, 31.236315);//定义一个中心点坐标
+        map.centerAndZoom(point, 17);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+
+    //地图事件设置函数：
+    function setMapEvent() {
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+
+    //地图控件添加函数：
+    function addMapControl() {
+        //向地图中添加缩放控件
+        var ctrl_nav = new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_LEFT, type: BMAP_NAVIGATION_CONTROL_LARGE});
+        map.addControl(ctrl_nav);
+        //向地图中添加比例尺控件
+        var ctrl_sca = new BMap.ScaleControl({anchor: BMAP_ANCHOR_BOTTOM_LEFT});
+        map.addControl(ctrl_sca);
+    }
+
+    //标注点数组
+    var markerArr = [{
+        title: "上海震亚律所",
+        content: "上海市浦东新区商城路660号乐凯大厦1501室",
+        point: "121.525273|31.23633",
+        isOpen: 0,
+        icon: {w: 21, h: 21, l: 0, t: 0, x: 6, lb: 5}
+    }
+        , {
+            title: "北京震亚律所",
+            content: "北京市朝阳区朝外大街乙12号昆泰国际大厦910A",
+            point: "116.447777|39.928988",
+            isOpen: 0,
+            icon: {w: 21, h: 21, l: 0, t: 0, x: 6, lb: 5}
+        }
+    ];
+    //创建marker
+    function addMarker() {
+        for (var i = 0; i < markerArr.length; i++) {
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0, p1);
+            var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point, {icon: iconImg});
+            var iw = createInfoWindow(i);
+            var label = new BMap.Label(json.title, {"offset": new BMap.Size(json.icon.lb - json.icon.x + 10, -20)});
+            marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                borderColor: "#808080",
+                color: "#333",
+                cursor: "pointer"
+            });
+
+            (function () {
+                var index = i;
+                var _iw = createInfoWindow(i);
+                var _marker = marker;
+                _marker.addEventListener("click", function () {
+                    this.openInfoWindow(_iw);
+                });
+                _iw.addEventListener("open", function () {
+                    _marker.getLabel().hide();
+                })
+                _iw.addEventListener("close", function () {
+                    _marker.getLabel().show();
+                })
+                label.addEventListener("click", function () {
+                    _marker.openInfoWindow(_iw);
+                })
+                if (!!json.isOpen) {
+                    label.hide();
+                    _marker.openInfoWindow(_iw);
+                }
+            })()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i) {
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>" + json.content + "</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json) {
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w, json.h), {
+            imageOffset: new BMap.Size(-json.l, -json.t),
+            infoWindowOffset: new BMap.Size(json.lb + 5, 1),
+            offset: new BMap.Size(json.x, json.h)
+        })
+        return icon;
+    }
+
+    initMap();//创建和初始化地图
+</script>
+
+<!--#include file="foot.html"-->

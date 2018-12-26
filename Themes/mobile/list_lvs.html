@@ -1,0 +1,39 @@
+<!--#include file="heading.html"-->
+
+
+<!--#include file="head.html"-->
+
+
+   <div class="am-slider am-slider-default" data-am-flexslider="{playAfterPaused: 8000}">
+    <ul class="am-slides">
+      <li> <img src="images/pageImg/2.jpg" width="100%">
+</li>
+     
+    </ul>
+  </div>
+  
+ 
+
+<div class="am-container">
+    <div>
+        <ul class="am-avg-sm-2 am-avg-md-3">
+<!--foreach{$pageList as $vo}--> 
+        
+    
+            <li class="li-cge">
+                <a href="{$vo.aurl}">
+                    <img src="{$vo.image}" alt="{$vo.title}" width="120" height="150" class="am-img-responsive am-center">
+                    <div class="am-text-center">{$vo.lsxm}</div>
+                </a>
+            </li>
+     <!--{/foreach}-->
+        </ul>
+
+    </div>
+</div>
+
+
+
+
+<div class="m-page">{$page} </div>
+<!--#include file="foot.html"-->

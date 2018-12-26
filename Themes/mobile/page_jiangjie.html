@@ -1,0 +1,68 @@
+<!--#include file="head.html"-->
+
+<img src="images/pageImg/1.jpg" width="100%">
+<!--次级页面头图-->
+
+<div id="secondPageButton">
+ <!--list{app="DuxCms" label="categoryList" limit=2 parent_id=1  }-->
+    <a class="am-badge am-badge-danger" href="{$list.curl}">{$list.name}</a>
+    <!--{/list}-->
+</div>
+<!--页面头图下的按钮-->
+
+<div id="firmIntroContent">
+    <p>
+        2011年至今，震亚律师事务所与法治天地频道（文广集团）联合制作的公益咨询节目《和大律师面对面》每周五播出,《律师讲堂》每周四播出（上海市在18频道、北京市在145频道）。
+    </p>
+    <p class="firmIntroContent_2">
+        2010年进行管理模式创新的上海震亚律师事务所，经过四年的努力，成为上海市业务规模、人员规模、员工收入、福利待遇、增开直营分所规模增长最快的律所之一，受到了同行及司法同仁的尊重。上海震亚律师事务所获得上海司法系统2013年度“优秀律师事务所”荣誉称号；周东律师获得2012年度”优秀青年律师”称号；周志强律师获得2013年度“优秀律师”称号！
+    </p>
+    <p class="firmIntroContent_2">
+        本所拥有高素质的执业律师团队,绝大多数律师具有硕士以上学历及十几年的从业经验，以扎实的法学功底、勤勉尽责的职业精神和高效负责的态度赢得业内和客户的广泛赞誉。现有执业律师毕业于交通大学、复旦大学、加拿大麦吉尔大学、华东政法大学、武汉大学、苏州大学、吉林大学等法律名校，其中三名律师取得双学士学位，一名律师具有财务国际注册会计师资格、三名律师具有会计、法律双资格。本所有些律师在从事律师执业前，有的在公检法机关工作多年。
+    </p>
+</div>
+<!--简介正文-->
+
+<div class="am-gotop am-gotop-fixed am-active" data-reactid=".0.3" data-am-widget="gotop" icon="arrow-up">
+    <div>
+        <a data-reactid=".0.3.0" href="#top">
+            <span class="am-icon-arrow-up am-gotop-icon" data-reactid=".0.3.0.1" icon="arrow-up"></span>
+        </a>
+    </div>
+    <!--右下角小箭头-->
+</div>
+
+
+<div id="qaBtn">
+    <a class="am-icon-faq am-icon-btn am-icon-question-circle" title="常见问题" href="./Q&A.html"></a>
+</div>
+<!--跳转q&a页面-->
+
+<!--右下角两个button-->
+
+<!--#include file="foot.html"-->
+<script src="js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="js/amazeui.min.js"></script>
+<script type="javascript">
+    $('#your-slider').flexslider({
+        playAfterPaused: 8000,
+        before: function(slider) {
+            if (slider._pausedTimer) {
+                window.clearTimeout(slider._pausedTimer);
+                slider._pausedTimer = null;
+            }
+        },
+        after: function(slider) {
+            var pauseTime = slider.vars.playAfterPaused;
+            if (pauseTime && !isNaN(pauseTime) && !slider.playing) {
+                if (!slider.manualPause && !slider.manualPlay && !slider.stopped) {
+                    slider._pausedTimer = window.setTimeout(function() {
+                        slider.play();
+                    }, pauseTime);
+                }
+            }
+        }
+        // 设置其他参数
+    });
+</script>

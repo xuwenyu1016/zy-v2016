@@ -1,0 +1,206 @@
+<!--#include file="head.html"-->
+
+<style type="text/css">
+    /*#autoDiv .consultBox{min-width: 250px;font-size: 24px;font-weight: 600;text-align: center;*/
+        /*padding: 35px 20px;background-color: rgb(247,247,248);border-radius: 5px;margin: 50px 20px 20px 20px;}*/
+    /*#autoDiv .consultBox p{margin: 10px auto;}*/
+    /*#autoDiv .consultOnline{margin-top: 20px;display: block;background-color:rgb(233,0,0);color: white;text-align: center;*/
+        /*min-width: 200px;border-radius: 5px;letter-spacing: 4px;}*/
+
+    .tableBox .am-g .am-articleQA form p{margin: 10px auto;}
+    .tableBox .am-g .am-articleQA form .inputName, .tableBox .am-g .am-articleQA form .inputNo,
+    .tableBox .am-g .am-articleQA form .inputMail{margin-left: 0;height: 40px;line-height: 40px;color:grey;
+        padding-left: 10px;width: 80%;}
+
+    .tableBox .am-g .am-articleQA form .inputNote {height: 80px;
+        width: 92%;color: grey;padding-left: 10px;}
+
+    .code{
+        /*background:url(code_bg.jpg);*/
+        font-family:Arial;font-style:italic;color:blue;font-size:30px;
+        border:0;padding:2px 3px;letter-spacing:3px;font-weight:bolder;float:left;
+        cursor:pointer;width:150px;height:60px;line-height:60px;text-align:center;vertical-align:middle;}
+
+</style>
+
+<img id="topImg" src="img/pageImg/5.jpg" class="am-img-responsive" alt="在线咨询"/>
+<!--头图-->
+
+<div id="autoDiv" class="am-g am-g-fixed">
+    <div class="am-u-md-9 am-u-md-push-3">
+        <div class="am-g">
+            <ol class="am-breadcrumb">
+                <li>
+                    <a href="__ROOT__/">首页</a>
+                </li>
+                <li class="am-active">在线咨询</li>
+            </ol>
+
+            <!--<div class="consultBox">-->
+                <!--<p>我们期待着你的咨询</p>-->
+            <!--</div>-->
+
+            <!--<a href="" class="consultOnline">立即在线咨询</a>-->
+
+            <div class="tableBox">
+                <div class="am-g">
+                    <div class="am-u-sm-12">
+                        <div id="QA" class="am-cf am-articleQA am-g">
+                            <form action="{U('DuxCms/Form/push')}" id="theForm" method="post" class="am-g" AutoComplete="off" onsubmit="validateCode()">
+
+                                <div class="am-form-group am-u-md-6">
+                                    <p>姓名 </p>
+                                    <input type="text" class="inputName" name="name" maxlength="10"
+                                           onfocus="this.value='';this.style.color='black'"  placeholder="姓名"
+                                           onblur="this.value=this.value.length==0?'请输入你的名字':this.value"/>
+                                </div>
+                                <div class="am-form-group am-u-md-6">
+                                    <p>手机号</p>
+                                    <input type="text" class="inputNo" name="tell"
+                                           maxlength="11" onkeyup="value=value.replace(/[^\d]/g,'')" placeholder="手机号"
+                                           onfocus="this.value='';this.style.color='black'"
+                                           onblur="this.value=this.value.length==0?'请输入你的手机号':this.value"/>
+                                </div>
+
+                                <div class="am-form-group am-u-md-6">
+                                    <p>邮箱</p>
+                                    <input type="email" class="inputMail" name="email" placeholder="邮箱"/>
+                                </div>
+                                <div class="am-form-group am-u-md-6">
+
+                                    <p> &nbsp;验证码 </p>
+
+                                    <input type="text" name="verifiy" id="input_verifiy"  class="am-form-field" placeholder="验证码" style="display: inline-block;width: 135px;vertical-align: middle;"/>
+
+                                    <button type="button" class="am-btn am-btn-primary msg" style="display: inline-block;width: calc(80% - 135px);vertical-align: middle;">获取验证码</button>
+
+                                </div>
+
+                                <div class="am-form-group am-u-md-12">
+                                    <p>留言</p>
+                                    <textarea class="inputNote"  name="content" title="请输入你的留言"></textarea>
+                                </div>
+
+
+                                <div class="am-form-group am-u-md-12">
+                                    <input name="table" type="hidden" value="guestbook">
+                                    <input type="hidden" id="dizhi" name="dizhi" value="">
+                                    <input name="token" type="hidden"
+                                           value=' <!--echo{ app="DuxCms" label="formToken" table="guestbook" }--> '/>
+
+                                    <button class="qaButton" type="submit" id="submitBtns">提&nbsp;交</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                <!--<div class="am-u-sm-4">-->
+                <!--<div class="qaImg">-->
+                <!--&lt;!&ndash;<img src="img/consult.png" class="am-img-responsive" alt="震亚微信咨询群"/>&ndash;&gt;-->
+                <!--</div>-->
+                <!--</div>-->
+                </div>
+
+            </div>
+
+            <div class="am-container tableResult">
+            <table class="am-table am-table-striped am-table-compact">
+            <thead>
+            <tr>
+            <th colspan="3">实时留言</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            <!--foreach{$pageList as $vo}-->
+            <tr>
+            <td>{len($vo.name,1)}**</td>
+
+            <td> {date('Y-m-d',$vo['time'])}</td>
+            </tr>
+            <tr>
+            <td>留言内容</td>
+
+            <td class="am-text-truncate">{$vo.content}</td>
+            </tr>
+            <!--{/foreach}-->
+
+            </tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+    <div class="am-u-md-3 am-u-md-pull-9 my-sidebar">
+        <ul class="am-nav">
+            <li class="am-nav-header">在线咨询</li>
+            <li><a href="">留言咨询</a></li>
+        </ul>
+    </div>
+
+</div>
+
+
+<!--#include file="foot.html"-->
+
+
+<script>
+    $("#theForm").submit(function(){
+//        alert("submitting...")
+        var $name = $('input[name="name"]').val();
+        var $tell = $('input[name="tell"]').val();
+        var $content = $('textarea[name="content"]').val();
+
+        var str = "";
+        str += '  名字：';
+        str += $name;
+        str += '  手机号：';
+        str += $tell;
+//        str += '  留言内容：';
+//        str += $content;
+//        alert(str);
+        $('input[name="dizhi"]').val(str);
+//        alert($('input[name="dizhi"]').val());
+    });
+
+    $(function () {
+        //获取短信验证码
+        var validCode = true;
+        $(".msg").click (function () {
+            $.ajax({
+                cache: true,
+                type: "POST",
+                url: "/DuxCms/Form/miji_yz",
+                data: $('#theForm').serialize(),// 你的formid
+                async: false,
+                error: function (request) {
+                    alert("系统出错请重新获取");
+                },
+                success: function (data) {
+//                    alert(data);
+//                     $("#commonLayout_appcreshi").parent().html(data);
+
+//                    alert("申请成功,立即下载!");
+//                    setTimeout(window.location.href="/mianshimiji/fudan.pdf",3000);
+                }
+            });
+
+            var time = 60;
+            var code = $(this);
+            if (validCode) {
+                validCode = false;
+                code.addClass("msg");
+                var t = setInterval(function () {
+                    time--;
+                    code.html('还剩余(' + time + ')秒');
+                    if (time == 0) {
+                        clearInterval(t);
+                        code.html("重新获取");
+                        validCode = true;
+                        code.removeClass("msg");
+
+                    }
+                }, 1000)
+            }
+        })
+    })
+
+</script>

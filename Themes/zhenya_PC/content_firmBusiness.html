@@ -1,0 +1,63 @@
+<!--#include file="commonHead.html"-->
+
+<!--#include file="commonTop.html"-->
+
+<img src="/Uploads/2017-08-29/8.jpg" alt="震亚律所" class="am-img-responsive" />
+
+<div class="am-container am-padding-bottom-xl am-g">
+	<div class="am-u-md-9">
+		<div class="am-margin-top-xl am-text-center am-text-lg am-padding-vertical-sm"><b>{$contentInfo.title}</b></div>
+		<!--<div class="am-text-center am-margin-bottom-lg"><span>{date('Y-m-d H:i:s',$contentInfo['time'])}</span>　<span>来源：{$contentInfo.copyfrom}</span>　<span>浏览：{$contentInfo.views}</span> </div>-->
+		<div class="am-margin-vertical-sm am-text-sm contentEssays">{$contentInfo.content}</div>
+
+		<ul class="am-avg-md-2 am-padding-top-lg am-padding-bottom-xl pagination">
+			<li>
+				<div class="am-text-truncate">
+					<span>上一篇：</span>
+					<!--if{empty($prevInfo['aurl'])}-->
+					<a class="am-link-muted ">暂无</a>
+					<!--{else}-->
+					<a href="{$prevInfo.aurl}" class="am-link-muted am-text-truncate">{$prevInfo.title}</a>
+					<!--{/if}-->
+				</div>
+			</li>
+			<li>
+				<div class="am-text-truncate">
+					<span>下一篇：</span>
+					<!--if{empty($nextInfo['aurl'])}-->
+					<a class="am-link-muted">暂无</a>
+					<!--{else}-->
+					<a href="{$nextInfo.aurl}" class="am-link-muted am-text-truncate">{$nextInfo.title}</a>
+					<!--{/if}-->
+				</div>
+			</li>
+		</ul>
+
+	</div>
+	<div class="am-u-md-3 am-padding-horizontal-0">
+		<div class=""><!--#include file="sidebarfirmBusiness.html"--></div>
+	</div>
+
+
+
+</div>
+
+
+<!--#include file="commonFooter.html"-->
+
+<!--#include file="commonBottom.html"-->
+
+<script>
+	$(function(){
+		$(".navList li:nth-child(4) a").addClass("active");
+	})
+</script>
+
+
+
+
+
+
+
+
+

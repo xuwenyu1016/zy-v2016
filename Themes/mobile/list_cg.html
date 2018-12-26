@@ -1,0 +1,79 @@
+<!--#include file="head.html"-->
+<div class="am-slider am-slider-default" data-am-flexslider="{playAfterPaused: 8000}">
+    <ul class="am-slides">
+        <li><img src="images/2.jpg" /></li>
+        <li><img src="images/banner2.jpg" /></li>
+        <li><img src="images/banner3.jpg" /></li>
+    </ul>
+</div>
+<!--轮播-->
+
+
+<div id="newsBox">
+<!--list{app="DuxCms" label="contentList" image="true"  class_id=16 }-->
+    <div class="lawsuitBox">
+        <div class="boxImg">
+            <img src="{cut_image($list.image,100,100)}" alt="" width="100"/>
+        </div>
+
+        <div class="boxContent">
+            <a class="boxContent_a" href="{$list.aurl}">
+                <span class="boxContent_H">{$list.title}</span>
+            </a>
+            <p class="boxContent_P">{$list.content}</p>
+            <!--<a class="boxContent_A" href="/">查看更多</a>-->
+        </div>
+    </div>
+<!--{/list}-->
+   
+  
+
+</div>
+<!--新闻首页盒子-->
+
+
+<div class="am-gotop am-gotop-fixed am-active" data-reactid=".0.3" data-am-widget="gotop" icon="arrow-up">
+    <div>
+        <a data-reactid=".0.3.0" href="#top">
+            <span class="am-icon-arrow-up am-gotop-icon" data-reactid=".0.3.0.1" icon="arrow-up"></span>
+        </a>
+    </div>
+    <!--右下角小箭头-->
+</div>
+
+
+<div id="qaBtn">
+    <a class="am-icon-faq am-icon-btn am-icon-question-circle" title="常见问题" href="./../Q&A.html"></a>
+</div>
+<!--跳转q&a页面-->
+
+<!--右下角两个button-->
+
+
+<!--#include file="foot.html"-->
+</body>
+<script src="js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="js/amazeui.min.js"></script>
+<script type="javascript">
+    $('#your-slider').flexslider({
+        playAfterPaused: 8000,
+        before: function(slider) {
+            if (slider._pausedTimer) {
+                window.clearTimeout(slider._pausedTimer);
+                slider._pausedTimer = null;
+            }
+        },
+        after: function(slider) {
+            var pauseTime = slider.vars.playAfterPaused;
+            if (pauseTime && !isNaN(pauseTime) && !slider.playing) {
+                if (!slider.manualPause && !slider.manualPlay && !slider.stopped) {
+                    slider._pausedTimer = window.setTimeout(function() {
+                        slider.play();
+                    }, pauseTime);
+                }
+            }
+        }
+        // 设置其他参数
+    });
+</script>

@@ -1,0 +1,130 @@
+<!--#include file="head.html"-->
+
+<style type="text/css">
+    #top_navBar .navs li>.active{background-color: white;}
+    #top_navBar .navs li>a.active, #top_navBar .navs li a span{color: black;border-bottom-color: transparent;}
+    #top_navBar .navs li>a.active:hover, #top_navBar .navs li a span:hover{color:white;}
+    #top_navBar .navs li:nth-last-child(1){background-color:rgb(221,0,9);border-radius: 5px;
+        border-right: 1px solid white;border-left: 1px solid white;border-bottom: 2px solid rgb(221,0,9);}
+    #top_navBar .navs li:nth-last-child(1):hover{border-bottom: none;}
+
+    #top_navBar .navs li:nth-last-child(1) a{color: white;}
+    #top_navBar .navs li:nth-last-child(1) a span{color: white;}
+</style>
+
+    <img id="topImg" src="img/pageImg/5.jpg" class="am-img-responsive" alt="在线咨询"/>
+    <!--律所简介头图-->
+
+    <div id="autoDiv" class="am-g am-g-fixed">
+        <div class="am-u-md-9 am-u-md-push-3">
+            <div class="am-g">
+                <ol class="am-breadcrumb">
+                    <li>
+                        <a href="__ROOT__/">首页</a>
+                    </li>
+                    <li class="am-active">在线咨询</li>
+                </ol>
+
+                <div class="am-u-sm-11 am-u-sm-centered">
+                    <div class="am-g am-g-QA">
+                        <div class="am-u-sm-8">
+                            <div id="QA" class="am-cf am-articleQA">
+                                <form action="{U('DuxCms/Form/push')}" method="post" AutoComplete="off">
+                                    <p>
+                                        姓名<input type="text" class="inputName" value="请输入你的名字" name="name"
+                                                 title="请输入你的名字"
+                                                 maxlength="10"
+                                                 onfocus="this.value='';this.style.color='black'"
+                                                 onblur="this.value=this.value.length==0?'请输入你的名字':this.value"/>
+                                    </p>
+                                    <p>
+                                        手机<input type="text" class="inputNo" value="请输入你的手机号" name="tell"
+                                                 title="请输入你的手机号"
+                                                 maxlength="11" onkeyup="value=value.replace(/[^\d]/g,'')"
+                                                 onfocus="this.value='';this.style.color='black'"
+                                                 onblur="this.value=this.value.length==0?'请输入你的手机号':this.value"/>
+                                    </p>
+                                    <p>
+                                        邮箱<input type="email" class="inputMail" name="email" placeholder="请输入你的邮箱"/>
+                                    </p>
+                                    <p>
+                                        咨询
+                                        <select id="doc-select-1" name="dizhi" class="inputMail"
+                                                style="margin-left:43px;margin-top:-80px">
+                                            <option value="">您想咨询的律所</option>
+                                            <option value="上海律所">上海律所</option>
+                                            <!--<option value="北京律所">北京律所</option>-->
+
+                                        </select>
+                                        <span class="am-form-caret"></span>
+                                    </p>
+                                    <p>
+                                        留言&nbsp;&nbsp;<textarea type="text" class="inputNote" value="请输入你的留言"
+                                                                name="content" title="请输入你的留言"
+                                                                onfocus="this.value='';this.style.color='black'"
+                                                                onblur="this.value=this.value.length==0?'请输入你的留言':this.value"
+                                                                style="width: 300px;height:100px"></textarea>
+                                    </p>
+                                    <input name="table" type="hidden" value="guestbook">
+                                    <input name="token" type="hidden"
+                                           value=' <!--echo{ app="DuxCms" label="formToken" table="guestbook" }--> '/>
+
+                                    <button class="qaButton" type="submit" id="submitBtns">提&nbsp;交</button>
+
+                                </form>
+                            </div>
+                        </div>
+                        <div class="am-u-sm-4">
+                            <div class="qaImg">
+                                <!--<img src="img/consult.png" class="am-img-responsive" alt="震亚微信咨询群"/>-->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="am-container tableResult">
+                    <table class="am-table am-table-striped am-table-compact">
+                        <thead>
+                            <tr>
+                                <th colspan="3">实时留言</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+
+                        <!--foreach{$list as $vo}-->
+
+                        {$vo.title}
+
+                        <!--{/foreach}-->
+
+                        <!--foreach{$pageList as $vo}-->
+                            <tr>
+                                <td>{len($vo.name,1)}**</td>
+
+                                <td> {date('Y-m-d',$vo['time'])}</td>
+                            </tr>
+                            <tr>
+                                <td>留言内容</td>
+
+                                <td class="am-text-truncate">{$vo.content}</td>
+                            </tr>
+                        <!--{/foreach}-->
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="am-u-md-3 am-u-md-pull-9 my-sidebar">
+            <ul class="am-nav">
+                <li class="am-nav-header">在线咨询</li>
+                <li><a href="">留言咨询</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <!--#include file="foot.html"-->
